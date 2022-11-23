@@ -234,6 +234,11 @@ main div.main-container {
   /*------------------ new porduct -----------------------*/
   /*------------------ youtube -----------------------*/
   /*------------------ celeb -----------------------*/
+  /* reivew */
+  /* instar */
+  /* sns */
+  /* banner */
+  /* notice */
 }
 main div.main-container div.cate-visual {
   max-width: 1400px;
@@ -540,7 +545,6 @@ main div.main-container div.review-container div.review-list-box {
   max-width: 1400px;
   margin: 0 auto;
   overflow: hidden;
-  height: 1000px;
 }
 main div.main-container div.review-container div.review-list-box div.review-list {
   display: flex;
@@ -557,28 +561,26 @@ main div.main-container div.review-container div.review-list-box div.review-list
 main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual a img {
   border-radius: 10px;
 }
-main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div {
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div.review-text div {
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div div {
-  width: 100%;
-}
-main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div div:nth-of-type(1) {
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div.review-text div:nth-of-type(1) {
   text-align: left;
   margin-top: 25px;
   padding: 0 8px;
   font-size: 16px;
   font-weight: bold;
 }
-main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div div:nth-of-type(2) {
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div.review-text div:nth-of-type(2) {
   text-align: left;
   margin-top: 10px;
   padding: 0 8px;
   font-size: 15px;
 }
-main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div div:nth-of-type(3) {
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div.review-text div:nth-of-type(3) {
   text-align: left;
   margin-top: 10px;
   font-size: 14px;
@@ -586,7 +588,7 @@ main div.main-container div.review-container div.review-list-box div.review-list
   padding-bottom: 30px;
   position: relative;
 }
-main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div div:nth-of-type(3)::after {
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div.review-text div:nth-of-type(3)::after {
   content: "";
   width: 100%;
   height: 1px;
@@ -597,4 +599,236 @@ main div.main-container div.review-container div.review-list-box div.review-list
 }
 main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-prod {
   margin-top: 20px;
+  display: flex;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-prod a {
+  width: 80px;
+  height: 80px;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-prod a img {
+  border-radius: 0px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-prod div.review-sub-text {
+  max-width: 190px;
+  padding-left: 15px;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-prod div.review-sub-text div.heart-box {
+  float: right;
+  background: url(../img/heart-thin-outline.svg) no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-bottom: 9px;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-prod div.review-sub-text div {
+  float: left;
+  width: 100%;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-prod div.review-sub-text div p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-prod div.review-sub-text div span {
+  font-size: 13px;
+}
+main div.main-container div.instar-container div.instar-content {
+  max-width: 1400px;
+  margin: 150px auto 0px;
+  text-align: center;
+}
+main div.main-container div.instar-container div.instar-content h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+main div.main-container div.instar-container div.instar-content h3 {
+  margin: 0 0 50px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+}
+main div.main-container div.instar-container div.instar-content div.visual-instar ul {
+  display: flex;
+}
+main div.main-container div.instar-container div.instar-content div.visual-instar ul li {
+  margin-right: 25px;
+}
+main div.main-container div.instar-container div.instar-content div.visual-instar ul li a img {
+  width: 100%;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main div.main-container div.instar-container div.instar-content div.visual-instar ul li:nth-last-child(1) {
+  margin-right: 0px;
+}
+main div.main-container div.sns-btn-box {
+  margin: 60px auto;
+}
+main div.main-container div.sns-btn-box div {
+  display: flex;
+  justify-content: center;
+}
+main div.main-container div.sns-btn-box div ul {
+  display: flex;
+}
+main div.main-container div.sns-btn-box div ul li {
+  width: 45px;
+  height: 45px;
+  background: url(../img/sns_more_btn.png) no-repeat;
+  background-size: cover;
+  margin: 0 6px;
+  opacity: 0.6;
+}
+main div.main-container div.sns-btn-box div ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main div.main-container div.sns-btn-box div ul li:nth-child(2) {
+  background-position-x: -45px;
+}
+main div.main-container div.sns-btn-box div ul li:nth-child(3) {
+  background-position-x: -90px;
+}
+main div.main-container div.sns-btn-box div ul li:nth-child(4) {
+  background-position-x: -135px;
+}
+main div.main-container div.sns-btn-box div ul li:nth-child(5) {
+  background-position-x: -180px;
+}
+main div.main-container div.sns-btn-box div ul li:hover {
+  opacity: 1;
+}
+main div.main-container div.info-banner {
+  margin: 50px auto 80px;
+  display: flex;
+  justify-content: center;
+}
+main div.main-container div.info-banner div.banner-box {
+  border: 5px;
+  margin-right: 20px;
+}
+main div.main-container div.info-banner div.banner-box a img {
+  width: 100%;
+  border-radius: 5px;
+}
+main div.main-container div.info-banner div.banner-box:nth-last-child(1) {
+  margin-right: 0px;
+}
+main div.main-container div.notice-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+main div.main-container div.notice-container div.notice-content-box {
+  position: relative;
+  padding: 40px 0px;
+}
+main div.main-container div.notice-container div.notice-content-box h2 {
+  width: 140px;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+main div.main-container div.notice-container div.notice-content-box div.notice-list-box {
+  float: left;
+  height: 24px;
+  overflow: hidden;
+}
+main div.main-container div.notice-container div.notice-content-box div.notice-list-box div.notice-list {
+  height: 24px;
+  width: 100%;
+}
+main div.main-container div.notice-container div.notice-content-box div.notice-list-box div.notice-list ul li a {
+  display: flex;
+}
+main div.main-container div.notice-container div.notice-content-box div.notice-list-box div.notice-list ul li a p {
+  font-size: 16px;
+}
+main div.main-container div.notice-container div.notice-content-box div.notice-list-box div.notice-list ul li a span {
+  margin-left: 40px;
+  color: #cecece;
+  font-weight: lighter;
+  font-size: 16px;
+}
+main div.main-container div.notice-container div.notice-content-box div.button-box {
+  float: right;
+  position: relative;
+}
+main div.main-container div.notice-container div.notice-content-box div.button-box button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  background: url(../img/newmain_icons.png) no-repeat;
+  transform: translate(0, -50%);
+}
+main div.main-container div.notice-container div.notice-content-box div.button-box button.button-left {
+  background-position: -76px;
+  position: absolute;
+  left: -100px;
+}
+main div.main-container div.notice-container div.notice-content-box div.button-box button.button-rigth {
+  background-position: -109px;
+  position: absolute;
+  left: -50px;
+}
+
+footer div.footer-container {
+  max-width: 1400px;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+footer div.footer-container div.footer-content div.callFamly-box {
+  display: flex;
+  justify-content: space-between;
+}
+footer div.footer-container div.footer-content div.callFamly-box div {
+  display: flex;
+  align-items: center;
+}
+footer div.footer-container div.footer-content div.callFamly-box div p {
+  font-size: 17px;
+}
+footer div.footer-container div.footer-content div.callFamly-box div span {
+  font-size: 30px;
+  font-weight: bold;
+  color: #14008c;
+  padding-left: 20px;
+  letter-spacing: -0.02em;
+  line-height: 25px;
+}
+footer div.footer-container div.footer-content div.call-list {
+  margin-top: 50px;
+  line-height: 26px;
+}
+footer div.footer-container div.footer-content div.call-list p {
+  color: #757575;
+}
+footer div.footer-container div.footer-content div.call-list div.call-box div span {
+  color: #757575;
+}
+footer div.footer-container div.footer-content div.call-list div.call-box div span.call-title {
+  padding-right: 10px;
+}
+footer div.footer-container div.footer-content div.call-list div.call-box div span.call-number {
+  padding-right: 50px;
+}
+footer div.footer-container div.footer-content ul.footer-sns-icon {
+  float: right;
+  display: flex;
+}
+footer div.footer-container div.footer-content ul.footer-sns-icon a {
+  height: 30px;
+  width: 30px;
 }/*# sourceMappingURL=common.css.map */
