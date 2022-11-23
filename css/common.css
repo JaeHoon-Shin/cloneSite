@@ -1,0 +1,600 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Noto+Sans+KR&display=swap");
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", "맑은고딕", sans-serif;
+  font-size: 14px;
+  color: #333;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+img {
+  width: 100%;
+}
+
+/*------------------ header-----------------------*/
+header {
+  line-height: 1.3;
+  font-family: "Heebo", "Noto Sans KR", "sans-serif", "Arial", "NotoSansCJK", "NanumSquare", "Noto Sans KR", "Nanum Gothic", "Malgun Gothic", "dotum", "돋움";
+  position: relative;
+  /*------------------ header gnb -----------------------*/
+}
+header div.header-container {
+  background: #f7f7f7;
+}
+header div.header-container div.header-top {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+header div.header-container div.header-top div.header-top-menu {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+header div.header-container div.header-top div.header-top-menu ul {
+  display: flex;
+  align-items: center;
+}
+header div.header-container div.header-top div.header-top-menu ul li a {
+  padding: 15px;
+  font-size: 12px;
+}
+header div.header-container div.header-top div.header-top-menu ul li a::before {
+  content: "";
+  width: 1px;
+  height: 14px;
+  background: #eee;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 17px;
+}
+header div.header-container div.header-top div.header-top-menu ul li:nth-child(1) a::before {
+  content: "";
+  width: 0px;
+}
+header div.header-container div.header-top ul.mall-list {
+  display: flex;
+  width: 30%;
+  margin-top: 10px;
+}
+header div.header-container div.header-top ul.mall-list li {
+  width: 50%;
+  text-align: center;
+}
+header div.header-container div.header-top ul.mall-list li a {
+  display: flex;
+  flex-direction: column;
+}
+header div.header-container div.header-top ul.mall-list li a span {
+  color: #14008c;
+}
+header div.header-container div.header-top ul.mall-list li a strong {
+  font-size: 16px;
+  font-weight: 500;
+}
+header div.header-container div.header-top ul.mall-list li:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+header div.header-container div.header-top ul.mall-list li:nth-child(2) a span {
+  color: #8e8e8e;
+}
+header div.header-container div.header-top ul.mall-list li:nth-child(2) a strong {
+  color: #8e8e8e;
+}
+header div.header-menu div.gnb-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header div.header-menu div.gnb-wrapper div.logo-box {
+  text-align: center;
+}
+header div.header-menu div.gnb-wrapper div.logo-box a h1 {
+  display: none;
+}
+header div.header-menu div.gnb-wrapper div.logo-box a img {
+  width: 175px;
+  margin: 40px 0 25px;
+  height: 26px;
+}
+header div.header-menu div.gnb-wrapper div.menu-box {
+  display: flex;
+  margin-bottom: 10px;
+}
+header div.header-menu div.gnb-wrapper div.menu-box div.all-cate {
+  font-size: 18px;
+  margin-right: 60px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+header div.header-menu div.gnb-wrapper div.menu-box div.all-cate a div {
+  background: url(../img/newmain_icons.png) no-repeat;
+  width: 26px;
+  height: 27px;
+  float: left;
+  padding-right: 10px;
+  background-position: -211px;
+}
+header div.header-menu div.gnb-wrapper div.menu-box div.sub-menu {
+  font-size: 18px;
+  margin-top: 10px;
+}
+header div.header-menu div.gnb-wrapper div.menu-box div.sub-menu ul {
+  display: flex;
+}
+header div.header-menu div.gnb-wrapper div.menu-box div.sub-menu ul li {
+  margin-right: 60px;
+}
+header div.header-menu div.gnb-wrapper div.menu-box div.serch-box {
+  transform: translate(250%);
+}
+header div.header-menu div.gnb-wrapper div.menu-box div.serch-box div {
+  display: inline-block;
+}
+header div.header-menu div.gnb-wrapper div.menu-box div.serch-box div input {
+  border-style: none;
+  border-bottom: 1px solid #000000;
+  font-size: 14px;
+  font-family: "Noto";
+  color: #333;
+  line-height: 35px;
+  box-sizing: border-box;
+  background: #fff;
+  height: 35px;
+  padding: 0 10px;
+  outline: none;
+}
+header div.header-menu div.gnb-wrapper div.menu-box div.serch-box button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  font-size: 13px;
+  vertical-align: middle;
+  background: none;
+  outline: none;
+  border-radius: 0;
+  font-family: "Noto", "맑은고딕", sans-serif;
+  border-style: none;
+}
+header div.header-menu div.gnb-wrapper div.menu-box div.serch-box button div {
+  background: url(../img/newmain_icons.png) no-repeat;
+  height: 20px;
+  width: 20px;
+  background-position: -186px;
+  margin: 7px 10px;
+}
+
+/*------------------ main -----------------------*/
+main {
+  /*------------------main visual -----------------------*/
+  /*------------------ main content -----------------------*/
+}
+main div.visual-box {
+  position: relative;
+}
+main div.visual-box div.img-box img {
+  width: 100%;
+}
+main div.visual-box button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+main div.visual-box button.slide:nth-of-type(1) {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  background: url(../img/main_slide_arr.png) no-repeat;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  transform: translate(-50%, -50%);
+}
+main div.visual-box button.slide:nth-of-type(2) {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  background: url(../img/main_slide_arr.png) no-repeat;
+  background-position: 100%;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  transform: translate(-50%, -50%);
+}
+main div.visual-box ul {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  display: flex;
+  transform: translate(-50%, 0);
+  width: 50%;
+}
+main div.visual-box ul li {
+  width: 13%;
+}
+main div.visual-box ul li button {
+  width: 100%;
+  height: 3px;
+}
+main div.visual-box ul li:nth-child(1) button {
+  height: 5px;
+}
+main div.main-container {
+  /*------------------ stroy -----------------------*/
+  /*------------------ new porduct -----------------------*/
+  /*------------------ youtube -----------------------*/
+  /*------------------ celeb -----------------------*/
+}
+main div.main-container div.cate-visual {
+  max-width: 1400px;
+  display: flex;
+  margin: 100px auto;
+}
+main div.main-container div.cate-visual div.cate-icon {
+  text-align: center;
+  margin-right: 45px;
+}
+main div.main-container div.cate-visual div.cate-icon a div.icon-box {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+main div.main-container div.cate-visual div.cate-icon a div.icon-box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main div.main-container div.cate-visual div.cate-icon a div.title-box {
+  margin-top: 40px;
+  font-size: 18px;
+}
+main div.main-container div.emons-story-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+main div.main-container div.emons-story-container h2 {
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+main div.main-container div.emons-story-container div.specevent_visual {
+  display: flex;
+}
+main div.main-container div.emons-story-container div.specevent_visual div.specevent_icon {
+  margin-right: 25px;
+}
+main div.main-container div.emons-story-container div.specevent_visual div.specevent_icon a img {
+  width: 100%;
+  border-radius: 10px;
+}
+main div.main-container div.emons-story-container div.specevent_visual div.specevent_icon a div {
+  margin-top: 35px;
+  padding: 0 10px;
+}
+main div.main-container div.emons-story-container div.specevent_visual div.specevent_icon a div span {
+  font-size: 22px;
+  font-weight: bold;
+}
+main div.main-container div.emons-story-container div.specevent_visual div.specevent_icon a div p {
+  margin-top: 5px;
+  font-size: 18px;
+}
+main div.main-container div.emons-story-container div.specevent_visual div.specevent_icon:nth-child(3) {
+  margin-right: 0px;
+}
+main div.main-container div.wrap-new-product {
+  margin: 140px auto;
+  max-width: 1400px;
+  text-align: center;
+}
+main div.main-container div.wrap-new-product h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+main div.main-container div.wrap-new-product div.new-product-list ul {
+  display: flex;
+  justify-content: center;
+}
+main div.main-container div.wrap-new-product div.new-product-list ul li {
+  width: 110px;
+  height: 50px;
+  border-radius: 30px;
+  background: #f2f4f5;
+  color: #565656;
+  text-align: center;
+  line-height: 50px;
+  font-size: 17px;
+  margin: 0 7px;
+  cursor: pointer;
+}
+main div.main-container div.wrap-new-product div.new-product-list ul li:nth-child(1) {
+  background-color: #ffffff;
+  border: 1px solid #17008f;
+}
+main div.main-container div.wrap-new-product div.new-product-list ul li:nth-child(1) a {
+  color: #17008f;
+}
+main div.main-container div.wrap-new-product div.product-img-container {
+  margin-top: 50px;
+  display: flex;
+}
+main div.main-container div.wrap-new-product div.product-img-container div.main-img-box-container {
+  width: 50%;
+}
+main div.main-container div.wrap-new-product div.product-img-container div.main-img-box-container div.main-img-box {
+  width: 100%;
+  height: 100%;
+  max-width: 680px;
+  max-height: 720px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main div.main-container div.wrap-new-product div.product-img-container div.sub-img-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+main div.main-container div.wrap-new-product div.product-img-container div.sub-img-container div.sub-img-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+main div.main-container div.wrap-new-product div.product-img-container div.sub-img-container div.sub-img-box a {
+  width: 100%;
+  max-width: 340px;
+  max-height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main div.main-container div.wrap-new-product div.product-img-container div.sub-img-container div.sub-img-box a:nth-child(1) {
+  margin-right: 20px;
+}
+main div.main-container div.wrap-new-product div.product-img-container div.sub-img-container div.sub-img-box:nth-child(2) {
+  margin-bottom: 0px;
+}
+main div.main-container div.youtube-container {
+  margin: 10px auto 0px;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+main div.main-container div.youtube-container div.play-box {
+  width: 100%;
+  max-width: 900px;
+}
+main div.main-container div.youtube-container div.play-box div.youtube-play {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+main div.main-container div.youtube-container div.play-box div.youtube-play a {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+main div.main-container div.youtube-container div.play-box div.youtube-play a img {
+  border-radius: 10px;
+}
+main div.main-container div.youtube-container div.play-box div.youtube-play a span {
+  background: url(../img/btn_video_play.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 85px;
+  height: 85px;
+  transform: translate(-50%, -50%);
+}
+main div.main-container div.youtube-container div.play-box div.youtube-play iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+}
+main div.main-container div.youtube-container div.youtube-list-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  max-width: 450px;
+  max-height: 506px;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.text-box {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0px 220px;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.text-box span:nth-child(1) {
+  font-size: 20px;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.text-box span:nth-child(2) {
+  margin-top: 20px;
+  font-size: 36px;
+  font-weight: bold;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.slide-button {
+  display: flex;
+  justify-content: right;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.slide-button button {
+  border-style: none;
+  background: url(../img/select.jpg) no-repeat center center;
+  width: 27px;
+  height: 27px;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.slide-button button:nth-child(1) {
+  transform: rotate(90deg);
+}
+main div.main-container div.youtube-container div.youtube-list-container div.slide-button button:nth-of-type(2) {
+  transform: rotate(-90deg);
+}
+main div.main-container div.youtube-container div.youtube-list-container div.slide-button span {
+  padding-top: 3px;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.slide-button span b {
+  font-weight: bold;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul {
+  display: flex;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul li {
+  width: 147px;
+  overflow: hidden;
+  cursor: pointer;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul li img {
+  border-radius: 5px;
+  margin: 5%;
+  width: 90% !important;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul li div {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 0 8px !important;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul li:nth-child(1) {
+  background: #282828;
+  border-radius: 5px;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul li:nth-child(1) div {
+  color: #ffffff;
+}
+main div.main-container div.celeb-visual-container {
+  position: relative;
+  width: 100%;
+}
+main div.main-container div.celeb-visual-container div.celeb-visual-list {
+  max-width: 1400px;
+  margin: 150px auto 150px;
+  overflow: hidden;
+}
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box {
+  display: flex;
+  position: relative;
+}
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box div {
+  width: 467px;
+}
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box div a {
+  position: relative;
+}
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box div a img {
+  width: 100%;
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box div a div.celeb-text-box {
+  position: relative;
+  top: -15%;
+  margin-left: 15px;
+}
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box div a div.celeb-text-box p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box div a div.celeb-text-box div {
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  width: 60px;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: normal;
+  margin-top: 10px;
+}
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box div:hover div.celeb-text-box div {
+  color: #000000;
+  background-color: #fff;
+}
+main div.main-container div.review-container {
+  background: #f3f4f6;
+  margin-top: 150px;
+}
+main div.main-container div.review-container h2 {
+  padding: 150px 0 130px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+main div.main-container div.review-container div.review-list-box {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 1000px;
+}
+main div.main-container div.review-container div.review-list-box div.review-list {
+  display: flex;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box {
+  width: 350px;
+  flex-shrink: 0;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual {
+  max-width: 290px;
+  padding: 15px;
+  background: #fff;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual a img {
+  border-radius: 10px;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div div {
+  width: 100%;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div div:nth-of-type(1) {
+  text-align: left;
+  margin-top: 25px;
+  padding: 0 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div div:nth-of-type(2) {
+  text-align: left;
+  margin-top: 10px;
+  padding: 0 8px;
+  font-size: 15px;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div div:nth-of-type(3) {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 0 8px;
+  padding-bottom: 30px;
+  position: relative;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-visual div div:nth-of-type(3)::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #eee;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+}
+main div.main-container div.review-container div.review-list-box div.review-list div.review-visual-box div.review-prod {
+  margin-top: 20px;
+}/*# sourceMappingURL=common.css.map */
