@@ -1,0 +1,199 @@
+/* body{position: fixed;} */
+main {
+    div.location-icon-container {
+        border: 1px solid #efefef;
+
+        div.location-icon {
+
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 0px;
+            align-items: center;
+
+            img {
+                width: 20px;
+                margin-right: 5px;
+
+                filter: invert(60%) sepia(2%) saturate(0%) hue-rotate(149deg) brightness(91%) contrast(92%);
+
+            }
+
+            a {
+                color: #8a8a8a;
+            }
+
+            div {
+
+                color: #8a8a8a;
+            }
+        }
+
+    }
+
+    div.info-nab {
+        background-color: #f9f9f9;
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        div.nab-box {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            padding: 40px 0;
+            justify-content: space-between;
+
+            div.list-box {
+                display: flex;
+
+                div.list {
+                    padding: 0px 12px;
+                    cursor: pointer;
+
+                    p {
+                        font-size: 1.3em;
+
+                        img {
+                            margin: 0 0 4px 5px;
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div.title-box {
+        max-width: 1400px;
+        margin: 100px auto 0px;
+
+        div.title {
+
+            margin: 50px 0px;
+
+            span {
+                padding-bottom: 30px;
+                font-size: 15px;
+            }
+
+            p {
+                margin-top: 30px;
+                font-size: 65px;
+                line-height: 1;
+                color: #333;
+            }
+        }
+
+        div.text-container {
+            display: flex;
+            margin-bottom: 100px;
+            justify-content: space-between;
+
+            div.text-box {
+                width: 50%;
+
+                div.text01 {
+                    padding-bottom: 50px;
+                    font-size: 28px;
+                    font-family: 'NotoB';
+                    line-height: 46px;
+                    color: #333;
+
+                    span {
+                        font-size: 13px;
+                        font-family: 'Open';
+                        line-height: 1;
+                        color: #555;
+                        font-weight: bold;
+                    }
+                }
+
+                div.text02 {
+                    span {
+                        margin-top: 10px;
+                        font-size: 18px;
+                        font-family: 'NotoB';
+                        line-height: 32px;
+                        font-weight: bold;
+                    }
+                }
+
+                div.text03 {
+                    p {
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: #333;
+                    }
+
+                }
+
+
+
+            }
+
+            div.onner-img-box {
+                width: 45%;
+
+                img {
+                    width: 100%;
+                }
+
+                div {
+                    margin-top: 30px;
+                    text-align: end;
+
+                    span {
+                        font-size: 16px;
+                        line-height: 40px;
+                        color: #333;
+                    }
+
+                    p {
+                        font-size: 33px;
+                        line-height: 40px;
+                        color: #333;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+footer {
+    div.licens-dark {
+
+        position: fixed;
+
+        width: 1920px;
+        height: 100vh;
+
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 999;
+        display: flex;
+
+        div {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%,0);
+            div.img-box {
+                width: 568px;
+                display: flex;
+                img {
+                    /* float: left; */
+                    width: 100%;
+                }
+                img.close {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            
+        }
+    }
+}

@@ -1,0 +1,148 @@
+/* body{position: fixed;} */
+main div.location-icon-container {
+  border: 1px solid #efefef;
+}
+main div.location-icon-container div.location-icon {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  align-items: center;
+}
+main div.location-icon-container div.location-icon img {
+  width: 20px;
+  margin-right: 5px;
+  filter: invert(60%) sepia(2%) saturate(0%) hue-rotate(149deg) brightness(91%) contrast(92%);
+}
+main div.location-icon-container div.location-icon a {
+  color: #8a8a8a;
+}
+main div.location-icon-container div.location-icon div {
+  color: #8a8a8a;
+}
+main div.info-nab {
+  background-color: #f9f9f9;
+}
+main div.info-nab h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+main div.info-nab div.nab-box {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-between;
+}
+main div.info-nab div.nab-box div.list-box {
+  display: flex;
+}
+main div.info-nab div.nab-box div.list-box div.list {
+  padding: 0px 12px;
+  cursor: pointer;
+}
+main div.info-nab div.nab-box div.list-box div.list p {
+  font-size: 1.3em;
+}
+main div.info-nab div.nab-box div.list-box div.list p img {
+  margin: 0 0 4px 5px;
+  width: 20px;
+}
+main div.title-box {
+  max-width: 1400px;
+  margin: 100px auto 0px;
+}
+main div.title-box div.title {
+  margin: 50px 0px;
+}
+main div.title-box div.title span {
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+main div.title-box div.title p {
+  margin-top: 30px;
+  font-size: 65px;
+  line-height: 1;
+  color: #333;
+}
+main div.title-box div.text-container {
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: space-between;
+}
+main div.title-box div.text-container div.text-box {
+  width: 50%;
+}
+main div.title-box div.text-container div.text-box div.text01 {
+  padding-bottom: 50px;
+  font-size: 28px;
+  font-family: "NotoB";
+  line-height: 46px;
+  color: #333;
+}
+main div.title-box div.text-container div.text-box div.text01 span {
+  font-size: 13px;
+  font-family: "Open";
+  line-height: 1;
+  color: #555;
+  font-weight: bold;
+}
+main div.title-box div.text-container div.text-box div.text02 span {
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: "NotoB";
+  line-height: 32px;
+  font-weight: bold;
+}
+main div.title-box div.text-container div.text-box div.text03 p {
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+}
+main div.title-box div.text-container div.onner-img-box {
+  width: 45%;
+}
+main div.title-box div.text-container div.onner-img-box img {
+  width: 100%;
+}
+main div.title-box div.text-container div.onner-img-box div {
+  margin-top: 30px;
+  text-align: end;
+}
+main div.title-box div.text-container div.onner-img-box div span {
+  font-size: 16px;
+  line-height: 40px;
+  color: #333;
+}
+main div.title-box div.text-container div.onner-img-box div p {
+  font-size: 33px;
+  line-height: 40px;
+  color: #333;
+}
+
+footer div.licens-dark {
+  position: fixed;
+  width: 1920px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: flex;
+}
+footer div.licens-dark div {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+}
+footer div.licens-dark div div.img-box {
+  width: 568px;
+  display: flex;
+}
+footer div.licens-dark div div.img-box img {
+  /* float: left; */
+  width: 100%;
+}
+footer div.licens-dark div div.img-box img.close {
+  width: 50px;
+  height: 50px;
+}/*# sourceMappingURL=introduce.css.map */
