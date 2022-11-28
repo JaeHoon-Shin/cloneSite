@@ -33,7 +33,7 @@
                 <div class="header-top-menu">
                     <ul>
                         <li><a href="./introduce.html" title="회사소개 이동">회사소개</a></li>
-                        <li><a href="#" title="로그인 이동">로그인</a></li>
+                        <li><a href="./login.html" title="로그인 이동">로그인</a></li>
                         <li><a href="./signup.html" title="회원가입 이동">회원가입</a></li>
                         <li><a href="#" title="고객지원 이동">고객지원</a></li>
                     </ul>
@@ -1380,19 +1380,19 @@
         </div>
     </form>
     <div class="dark-box">
-    <div class="popup-box">
-        <button class="exit"></button>
-        <p>에몬스 회원가입</p>
-        <span>에몬스 통합회원 가입을 합니다.</span>
-        <button>다음</button>
-        <p>SNS 계정 회원가입</p>
-        <span>SNS 아이디로 에몬스에 가입합니다.</span>
-        <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-        </ul>
-    </div>
+        <div class="popup-box">
+            <button class="exit"></button>
+            <p>에몬스 회원가입</p>
+            <span>에몬스 통합회원 가입을 합니다.</span>
+            <button>다음</button>
+            <p>SNS 계정 회원가입</p>
+            <span>SNS 아이디로 에몬스에 가입합니다.</span>
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
     </div>
     <footer>
         <div class="footer-container">
@@ -1451,7 +1451,7 @@
                 <div class="footer-box03">
                     <span>e-mail : webmaster@emons.co.kr</span>
                     <span>사업자등록번호 : 139-81-32740</span>
-                    <span class="licens-btn"><a href="#">사업자 정보확인</a></span>
+                    <span class="license-btn"><a href="javascrtip:void(0);">사업자 정보확인</a></span>
                 </div>
                 <div class="footer-box04">
                     <span>COPYRIGHT ⓒ EMONS FURNITURE CO., LTD. ALL RIGHTS RESERVED</span>
@@ -1469,15 +1469,33 @@
                 </div>
             </a>
         </div>
+        <div class="license-dark">
+            <div>
+                <div class="img-box">
+                    <img src="./img/licensee.jpg">
+                    <img class="close" src="./img/license_close.jpg">
+                </div>
+            </div>
+        </div>
     </footer>
     <script>
         const popupExit = document.querySelector('div.popup-box button.exit'),
-         popupBox = document.querySelector('div.popup-box'),
-         darkBox = document.querySelector('div.dark-box');
-        popupExit.onclick = function(){
-            popupBox.style.display= "none";
-            darkBox.style.display= "none";
+            popupBox = document.querySelector('div.popup-box'),
+            darkBox = document.querySelector('div.dark-box')
+            licenseBtn = document.querySelector('.license-btn'),
+            licenseBox = document.querySelector('.license-dark');
+        popupExit.onclick = function () {
+            popupBox.style.display = "none";
+            darkBox.style.display = "none";
         }
+        licenseBtn.onclick = function () {
+            licenseBox.style.display = 'block';
+            document.querySelector('html').style.overflow = 'hidden';
+        };
+        document.querySelector('.close').onclick = function () {
+            licenseBox.style.display = 'none';
+            document.querySelector('html').style.overflow = 'visible';
+        };
     </script>
 </body>
 

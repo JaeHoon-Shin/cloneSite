@@ -1,4 +1,3 @@
-/* body{position: fixed;} */
 main div.location-icon-container {
   border: 1px solid #efefef;
 }
@@ -118,31 +117,4 @@ main div.title-box div.text-container div.onner-img-box div p {
   font-size: 33px;
   line-height: 40px;
   color: #333;
-}
-
-footer div.licens-dark {
-  position: fixed;
-  width: 1920px;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 999;
-  display: flex;
-}
-footer div.licens-dark div {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, 0);
-}
-footer div.licens-dark div div.img-box {
-  width: 568px;
-  display: flex;
-}
-footer div.licens-dark div div.img-box img {
-  /* float: left; */
-  width: 100%;
-}
-footer div.licens-dark div div.img-box img.close {
-  width: 50px;
-  height: 50px;
 }/*# sourceMappingURL=introduce.css.map */

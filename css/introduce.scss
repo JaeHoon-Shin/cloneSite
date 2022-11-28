@@ -1,4 +1,4 @@
-/* body{position: fixed;} */
+
 main {
     div.location-icon-container {
         border: 1px solid #efefef;
@@ -30,7 +30,6 @@ main {
         }
 
     }
-
     div.info-nab {
         background-color: #f9f9f9;
 
@@ -140,7 +139,7 @@ main {
                 img {
                     width: 100%;
                 }
-
+                
                 div {
                     margin-top: 30px;
                     text-align: end;
@@ -160,40 +159,5 @@ main {
             }
         }
 
-    }
-}
-
-footer {
-    div.licens-dark {
-
-        position: fixed;
-
-        width: 1920px;
-        height: 100vh;
-
-        background-color: rgba(0, 0, 0, 0.6);
-        z-index: 999;
-        display: flex;
-
-        div {
-            position: absolute;
-            left: 50%;
-            top: 0;
-            transform: translate(-50%,0);
-            div.img-box {
-                width: 568px;
-                display: flex;
-                img {
-                    /* float: left; */
-                    width: 100%;
-                }
-                img.close {
-                    width: 50px;
-                    height: 50px;
-                }
-            }
-
-            
-        }
     }
 }

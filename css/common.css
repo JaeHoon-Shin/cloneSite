@@ -285,10 +285,10 @@ footer div.footer-container div.footer-content div.footer-box03 span {
   margin-right: 20px;
   line-height: 25px;
 }
-footer div.footer-container div.footer-content div.footer-box03 span.licens-btn {
+footer div.footer-container div.footer-content div.footer-box03 span.license-btn {
   background: #aaa;
 }
-footer div.footer-container div.footer-content div.footer-box03 span.licens-btn a {
+footer div.footer-container div.footer-content div.footer-box03 span.license-btn a {
   padding: 0px 3px;
   color: #fff;
 }
@@ -327,4 +327,31 @@ footer div.side-bar a div.top-icon div.icon {
   background: url(../img/newmain_icons.png) no-repeat;
   color: #fff;
   background-position-x: -5px;
+}
+footer div.license-dark {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+footer div.license-dark div {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, 0);
+}
+footer div.license-dark div div.img-box {
+  width: 568px;
+  display: flex;
+}
+footer div.license-dark div div.img-box img {
+  width: 100%;
+}
+footer div.license-dark div div.img-box img.close {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,142 @@
+@charset "UTF-8";
+main div.login-content-container div.login-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+main div.login-content-container div.login-content p {
+  text-align: center;
+  font-size: 30px;
+  line-height: 1;
+  color: #333;
+  padding: 40px 50px;
+}
+main div.login-content-container div.login-content div.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+main div.login-content-container div.login-content div.container div.login-content-box {
+  position: relative;
+  padding: 0px 55px;
+  margin: 0px 100px;
+  /* height: 320px; */
+  width: 50%;
+}
+main div.login-content-container div.login-content div.container div.login-content-box form.login-content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+main div.login-content-container div.login-content div.container div.login-content-box form.login-content::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #ccc;
+  position: absolute;
+  right: -20%;
+}
+main div.login-content-container div.login-content div.container div.login-content-box form.login-content input[type=text],
+main div.login-content-container div.login-content div.container div.login-content-box form.login-content input[type=password] {
+  margin: 10px 0px;
+  height: 35px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: "Noto";
+  color: #333;
+  line-height: 35px;
+  box-sizing: border-box;
+  background: #fff;
+  outline: none;
+}
+main div.login-content-container div.login-content div.container div.login-content-box form.login-content button {
+  margin: 20px 0px 10px;
+  box-sizing: border-box;
+  line-height: 15px;
+  font-size: 15px;
+  color: #fff;
+  background: #1b2265;
+  padding: 15px 0px;
+}
+main div.login-content-container div.login-content div.container div.login-content-box form.login-content div.idCheck {
+  margin-bottom: 30px;
+  text-align: left;
+}
+main div.login-content-container div.login-content div.container div.login-content-box form.login-content div {
+  position: relative;
+  margin-bottom: 30px;
+}
+main div.login-content-container div.login-content div.container div.login-content-box form.login-content div a {
+  width: 50%;
+  /* padding: 0px 30px ; */
+}
+main div.login-content-container div.login-content div.container div.login-content-box form.login-content div a:nth-child(1):after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-700%, -50%);
+  background: #000;
+}
+main div.login-content-container div.login-content div.container div.login-content-box form.login-content p {
+  font-size: 16px;
+}
+main div.login-content-container div.login-content div.container div.login-content-box div.sns-content p {
+  font-family: "Noto Sans KR", "맑은고딕", sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+main div.login-content-container div.login-content div.container div.login-content-box div.sns-content ul {
+  display: flex;
+  flex-direction: column;
+}
+main div.login-content-container div.login-content div.container div.login-content-box div.sns-content ul li {
+  margin: 15px 0px;
+  text-align: center;
+}
+main div.login-content-container div.login-content div.container div.login-content-box div.sns-content ul li a {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+}
+main div.login-content-container div.login-content div.container div.login-content-box div.sns-content ul li a span {
+  margin: 0px 15px;
+  display: inline-block;
+}
+main div.login-content-container div.login-content div.container div.login-content-box div.sns-content ul li a span.sns-img1 {
+  background: url(../img/ico_sns02.png) no-repeat center center;
+  width: 50px;
+  height: 50px;
+}
+main div.login-content-container div.login-content div.container div.login-content-box div.sns-content ul li a span.sns-img2 {
+  background: url(../img/ico_sns01.png) no-repeat center center;
+  width: 50px;
+  height: 50px;
+}
+main div.login-content-container div.login-content div.container div.login-content-box div.sns-content ul li a span.sns-img3 {
+  background: url(../img/ico_sns03.png) no-repeat center center;
+  width: 50px;
+  height: 50px;
+}
+main div.login-content-container div.login-content div.text-box {
+  margin: 100px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main div.login-content-container div.login-content div.text-box span {
+  margin-bottom: 30px;
+}
+main div.login-content-container div.login-content div.text-box button {
+  width: 180px;
+  color: #fff;
+  background: #1b2265;
+  box-sizing: border-box;
+  line-height: 15px;
+  font-size: 15px;
+  padding: 10px 0px;
+}/*# sourceMappingURL=login.css.map */
