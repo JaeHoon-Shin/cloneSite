@@ -1,0 +1,120 @@
+$mobile : 360px;
+$tablet : 760px;
+$pc : 1400px;
+
+@mixin device($min, $max) {
+    @media (min-width:$min) and (max-width:$max) {
+        @content;
+    }
+
+}
+
+@mixin deviceMax($max) {
+    @media (max-width:$max) {
+        @content;
+    }
+
+}
+
+
+@include device($mobile, $pc ) {
+/* ---------------------header--------------------- */
+    header {
+        div.header-container {
+            display: none;
+        }
+
+        div.header-menu {
+            div.gnb-wrapper {
+                div.m-header-top {
+                    display: block;
+                }
+
+                div.logo-box {
+                    text-align: left;
+                    max-width: 130px;
+                    padding-left: 30px;
+
+                    div.btn-box {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+
+    }
+}
+
+
+
+@include deviceMax(851px) {
+    header {
+        div.header-menu {
+            div.gnb-wrapper {
+                div.menu-box {
+                    div.all-cate {
+                        margin-right: 0px;
+
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include deviceMax($tablet) {
+    header {
+        div.header-menu {
+            div.gnb-wrapper {
+                div.m-header-top {
+                    display: none;
+                }
+                div.logo-box {
+                    text-align: left;
+                    max-width: 130px;
+                    padding-left: 30px;
+
+                    div.btn-box {
+                        display: block;
+                    }
+                }
+                div.menu-box {
+                    div.all-cate {
+                        display: none;
+                    }
+
+                    div.serch-box {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@include deviceMax(1000px){
+    footer{
+        div.side-bar{
+            display: none;
+        }
+        div.footer-container{
+            div.footer-content{
+                div.callFamly-box{
+                    select{
+                        display: none;
+                    }
+                }
+                div.footer-icon-box{
+                    display: none;
+                }
+            }
+        }
+        div.footer-media{
+            display: block;
+        }
+    }
+}

@@ -90,9 +90,26 @@ header div.header-container div.header-top ul.mall-list li:nth-child(2) a span {
 header div.header-container div.header-top ul.mall-list li:nth-child(2) a strong {
   color: #8e8e8e;
 }
+header div.header-menu div.m-header-top {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+header div.header-menu div.m-header-top ul {
+  display: flex;
+  width: 30%;
+  margin-top: 10px;
+}
+header div.header-menu div.m-header-top ul li a {
+  padding: 15px;
+  font-size: 12px;
+}
 header div.header-menu div.gnb-wrapper {
   max-width: 1400px;
   margin: 0 auto;
+}
+header div.header-menu div.gnb-wrapper div.m-header-top {
+  display: none;
 }
 header div.header-menu div.gnb-wrapper div.logo-box {
   text-align: center;
@@ -105,9 +122,24 @@ header div.header-menu div.gnb-wrapper div.logo-box a img {
   margin: 40px 0 25px;
   height: 26px;
 }
+header div.header-menu div.gnb-wrapper div.logo-box div.btn-box {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 230px;
+  display: none;
+}
+header div.header-menu div.gnb-wrapper div.logo-box div.btn-box img {
+  width: 11px;
+}
 header div.header-menu div.gnb-wrapper div.menu-box {
   display: flex;
   margin-bottom: 10px;
+  padding-left: 30px;
 }
 header div.header-menu div.gnb-wrapper div.menu-box div.all-cate {
   font-size: 18px;
@@ -115,6 +147,7 @@ header div.header-menu div.gnb-wrapper div.menu-box div.all-cate {
   margin-top: 10px;
   display: flex;
   justify-content: center;
+  flex-shrink: 0;
 }
 header div.header-menu div.gnb-wrapper div.menu-box div.all-cate a div {
   background: url(../img/newmain_icons.png) no-repeat;
@@ -127,15 +160,17 @@ header div.header-menu div.gnb-wrapper div.menu-box div.all-cate a div {
 header div.header-menu div.gnb-wrapper div.menu-box div.sub-menu {
   font-size: 18px;
   margin-top: 10px;
+  flex-shrink: 0;
 }
 header div.header-menu div.gnb-wrapper div.menu-box div.sub-menu ul {
   display: flex;
 }
 header div.header-menu div.gnb-wrapper div.menu-box div.sub-menu ul li {
-  margin-right: 60px;
+  margin: 0px 30px;
 }
 header div.header-menu div.gnb-wrapper div.menu-box div.serch-box {
-  transform: translate(250%);
+  text-align: right;
+  width: 100%;
 }
 header div.header-menu div.gnb-wrapper div.menu-box div.serch-box div {
   display: inline-block;
@@ -183,7 +218,7 @@ footer div.footer-container {
   max-width: 1400px;
   padding-top: 100px;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding: 50px 20px 10px;
 }
 footer div.footer-container div.footer-content {
   /* footer icon */
@@ -298,6 +333,42 @@ footer div.footer-container div.footer-content div.footer-box04 {
 footer div.footer-container div.footer-content div.footer-box04 span {
   font-size: 12px;
 }
+footer div.footer-media {
+  padding: 20px 20px 100px;
+  display: none;
+}
+footer div.footer-media div.footer-media-icon-box ul {
+  display: flex;
+  justify-content: center;
+}
+footer div.footer-media div.footer-media-icon-box ul li {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  display: inline-block;
+}
+footer div.footer-media div.footer-media-icon-box ul li a {
+  display: block;
+  height: 100%;
+  background: url(../img/footer_sns_2.png) no-repeat center;
+  background-position: 0px center;
+  background-size: cover;
+}
+footer div.footer-media div.footer-media-icon-box ul li:nth-child(2) a {
+  background-position: -50px center;
+}
+footer div.footer-media div.footer-media-icon-box ul li:nth-child(3) a {
+  background-position: -100px center;
+}
+footer div.footer-media div.footer-media-icon-box ul li:nth-child(4) a {
+  background-position: -150px center;
+}
+footer div.footer-media div.footer-media-icon-box ul li:nth-child(5) {
+  margin-right: 0px;
+}
+footer div.footer-media div.footer-media-icon-box ul li:nth-child(5) a {
+  background-position: -200px center;
+}
 footer div.side-bar {
   height: 140px;
   width: 55px;
@@ -307,6 +378,7 @@ footer div.side-bar {
   position: fixed;
   top: 50%;
   right: 0;
+  opacity: 0;
 }
 footer div.side-bar a div {
   display: flex;
@@ -354,4 +426,63 @@ footer div.license-dark div div.img-box img.close {
   width: 50px;
   height: 50px;
   cursor: pointer;
+}
+
+@media (min-width: 360px) and (max-width: 1400px) {
+  /* ---------------------header--------------------- */
+  header div.header-container {
+    display: none;
+  }
+  header div.header-menu div.gnb-wrapper div.m-header-top {
+    display: block;
+  }
+  header div.header-menu div.gnb-wrapper div.logo-box {
+    text-align: left;
+    max-width: 130px;
+    padding-left: 30px;
+  }
+  header div.header-menu div.gnb-wrapper div.logo-box div.btn-box {
+    display: block;
+  }
+}
+@media (max-width: 851px) {
+  header div.header-menu div.gnb-wrapper div.menu-box div.all-cate {
+    margin-right: 0px;
+  }
+  header div.header-menu div.gnb-wrapper div.menu-box div.all-cate span {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  header div.header-menu div.gnb-wrapper div.m-header-top {
+    display: none;
+  }
+  header div.header-menu div.gnb-wrapper div.logo-box {
+    text-align: left;
+    max-width: 130px;
+    padding-left: 30px;
+  }
+  header div.header-menu div.gnb-wrapper div.logo-box div.btn-box {
+    display: block;
+  }
+  header div.header-menu div.gnb-wrapper div.menu-box div.all-cate {
+    display: none;
+  }
+  header div.header-menu div.gnb-wrapper div.menu-box div.serch-box {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  footer div.side-bar {
+    display: none;
+  }
+  footer div.footer-container div.footer-content div.callFamly-box select {
+    display: none;
+  }
+  footer div.footer-container div.footer-content div.footer-icon-box {
+    display: none;
+  }
+  footer div.footer-media {
+    display: block;
+  }
 }/*# sourceMappingURL=common.css.map */

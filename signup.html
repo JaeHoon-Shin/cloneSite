@@ -1451,7 +1451,7 @@
                 <div class="footer-box03">
                     <span>e-mail : webmaster@emons.co.kr</span>
                     <span>사업자등록번호 : 139-81-32740</span>
-                    <span class="license-btn"><a href="javascrtip:void(0);">사업자 정보확인</a></span>
+                    <span class="license-btn"><a href="javascript:void(0);">사업자 정보확인</a></span>
                 </div>
                 <div class="footer-box04">
                     <span>COPYRIGHT ⓒ EMONS FURNITURE CO., LTD. ALL RIGHTS RESERVED</span>
@@ -1478,25 +1478,8 @@
             </div>
         </div>
     </footer>
-    <script>
-        const popupExit = document.querySelector('div.popup-box button.exit'),
-            popupBox = document.querySelector('div.popup-box'),
-            darkBox = document.querySelector('div.dark-box')
-            licenseBtn = document.querySelector('.license-btn'),
-            licenseBox = document.querySelector('.license-dark');
-        popupExit.onclick = function () {
-            popupBox.style.display = "none";
-            darkBox.style.display = "none";
-        }
-        licenseBtn.onclick = function () {
-            licenseBox.style.display = 'block';
-            document.querySelector('html').style.overflow = 'hidden';
-        };
-        document.querySelector('.close').onclick = function () {
-            licenseBox.style.display = 'none';
-            document.querySelector('html').style.overflow = 'visible';
-        };
-    </script>
+    <script src="./js/common.js"></script>
+    <script src="./js/signup.js"></script>
 </body>
 
 </html>

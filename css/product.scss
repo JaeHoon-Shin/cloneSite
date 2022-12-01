@@ -1,0 +1,185 @@
+main {
+    div.location-icon-container {
+        border: 1px solid #efefef;
+
+        div.location-icon {
+
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 0px;
+            align-items: center;
+
+            img {
+                width: 20px;
+                margin-right: 5px;
+
+                filter: invert(60%) sepia(2%) saturate(0%) hue-rotate(149deg) brightness(91%) contrast(92%);
+
+            }
+
+            a {
+                color: #8a8a8a;
+            }
+
+            div {
+
+                color: #8a8a8a;
+            }
+        }
+
+    }
+
+    div.content-container {
+        max-width: 1400px;
+        margin: 0px auto;
+        padding: 0 40px 100px 40px;
+        box-sizing: border-box;
+
+        div.text-content {
+            text-align: center;
+
+            h2 {
+                font-family: 'Noto Sans KR', '맑은고딕', sans-serif;
+                padding: 100px 0 60px 0;
+                font-size: 2.5em;
+                line-height: 1;
+                color: #333;
+
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                border-top: 1px solid #e5e5e5e5;
+                margin-bottom: 100px;
+
+                li {
+                    display: block;
+                    width: 25%;
+                    float: left;
+                    text-align: center;
+                    box-sizing: border-box;
+                    border-right: 1px solid #e5e5e5;
+                    border-bottom: 1px solid #e5e5e5e5;
+
+                    &:nth-child(1),
+                    &:nth-child(5) {
+                        border-left: 1px solid #e5e5e5;
+                    }
+
+                    a {
+                        display: block;
+                        font-size: 16px;
+                        padding: 15px 0;
+                    }
+                }
+
+            }
+
+        }
+
+        div.content-text-box {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 30px;
+            background: #f9f9f9;
+            margin-bottom: 50px;
+
+            div.text {
+                span {
+                    display: flex;
+                    font-size: 1.1em;
+
+                    color: #333;
+
+                    p {
+                        color: #1b2265;
+                        font-weight: bold;
+
+                    }
+                }
+            }
+
+            div.list-sort {
+                display: flex;
+
+                a {
+                    margin-right: 30px;
+
+                    &:nth-last-child(1) {
+                        p {
+                            line-height: 1;
+                            color: #1b2265;
+                            border-bottom: 1px solid #1b2265;
+                        }
+                    }
+
+                    p {
+                        font-size: 13px;
+                        color: #898989;
+
+
+                    }
+                }
+            }
+        }
+
+        div.content-list-container {
+            max-width: 1400px;
+            /* height: 500px; */
+
+            /* background-color: red; */
+            ul {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                li {
+                    width: 24%;
+                    display: flex;
+                    padding-bottom: 50px;
+
+                    a {
+                        position: relative;
+                        div.heart-box {
+                            background: url(../img/heart-thin-outline.svg) no-repeat;
+                            filter: invert(14%) sepia(19%) saturate(0%) hue-rotate(285deg) brightness(109%) contrast(89%);
+                            font-size: 0;
+                            width: 25px;
+                            height: 25px;
+                            cursor: pointer;
+                            position: absolute;
+                            right: 15px;
+                            top: 15px;
+                            z-index: 1;
+                        }
+
+                        div.img-box {
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+
+                            }
+
+                            margin-bottom: 10px;
+                        }
+
+                        div.text1 {
+                            margin: 20px 0;
+                            font-family: 'NotoB';
+                            font-size: 17px;
+                            line-height: 22px;
+                            color: #333;
+                            font-weight: bold;
+                        }
+
+                        div.text2 {}
+                    }
+                }
+            }
+        }
+    }
+}

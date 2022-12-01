@@ -1,3 +1,83 @@
+body div.popup-background {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+body div.popup-background div.popup-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+body div.popup-background div.popup-container div.btn-box {
+  position: absolute;
+  left: 37%;
+  bottom: 30%;
+}
+body div.popup-background div.popup-container div.btn-box ul {
+  display: flex;
+}
+body div.popup-background div.popup-container div.btn-box ul li {
+  margin-left: 10px;
+}
+body div.popup-background div.popup-container div.btn-box ul li:nth-child(1) a {
+  background-color: red;
+}
+body div.popup-background div.popup-container div.btn-box ul li a {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 999;
+}
+body div.popup-background div.popup-container div.popup-content-box {
+  width: 2450px;
+}
+body div.popup-background div.popup-container div.popup-content-box div.popup-content {
+  display: inline-block;
+  width: 350px;
+}
+body div.popup-background div.popup-container div.popup-content-box div.popup-content a {
+  width: 100%;
+}
+body div.popup-background div.popup-container div.popup-content-box div.popup-content a img {
+  width: 100%;
+  display: block;
+}
+body div.popup-background div.popup-container div.popup-text-container {
+  max-width: 100%;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  padding: 10px 0;
+}
+body div.popup-background div.popup-container div.popup-text-container div {
+  width: 50%;
+}
+body div.popup-background div.popup-container div.popup-text-container div a {
+  color: #aaa;
+  padding: 0 25px;
+  font-size: 14px;
+}
+body div.popup-background div.popup-container div.popup-text-container div:nth-child(2) {
+  text-align: right;
+}
+body div.popup-background div.popup-container div.popup-text-container div:nth-child(2) a {
+  color: #000;
+}
+
 /*------------------ main -----------------------*/
 main {
   /*------------------main visual -----------------------*/
@@ -6,7 +86,43 @@ main {
 main div.visual-box {
   position: relative;
 }
-main div.visual-box div.img-box img {
+main div.visual-box div.img-box-list {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+main div.visual-box div.img-box-list div.img-box {
+  width: 100%;
+  flex-shrink: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 4s;
+  /* animation: v-slied 20s infinite; 
+  @keyframes v-slied {
+      20%{
+         left:-1903px;
+      }
+      40%{
+          left:-3806px;
+      }
+      60%{
+          left:-5709px;
+      }
+      80%{
+          left:-7612px;
+      }
+      100%{
+          left:-9515px;
+      }
+  }*/
+}
+main div.visual-box div.img-box-list div.img-box:nth-child(1) {
+  opacity: 1;
+}
+main div.visual-box div.img-box-list div.img-box a img {
   width: 100%;
 }
 main div.visual-box button {
@@ -68,6 +184,7 @@ main div.main-container div.cate-visual {
   max-width: 1400px;
   display: flex;
   margin: 100px auto;
+  padding: 0px 20px;
 }
 main div.main-container div.cate-visual div.cate-icon {
   text-align: center;
@@ -91,6 +208,7 @@ main div.main-container div.cate-visual div.cate-icon a div.title-box {
 main div.main-container div.emons-story-container {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0px 20px;
 }
 main div.main-container div.emons-story-container h2 {
   margin-bottom: 40px;
@@ -127,6 +245,7 @@ main div.main-container div.wrap-new-product {
   margin: 140px auto;
   max-width: 1400px;
   text-align: center;
+  padding: 0px 20px;
 }
 main div.main-container div.wrap-new-product h2 {
   font-size: 30px;
@@ -198,6 +317,7 @@ main div.main-container div.youtube-container {
   max-width: 1400px;
   display: flex;
   justify-content: space-between;
+  padding: 0px 20px;
 }
 main div.main-container div.youtube-container div.play-box {
   width: 100%;
@@ -309,6 +429,7 @@ main div.main-container div.youtube-container div.youtube-list-container div.you
 main div.main-container div.celeb-visual-container {
   position: relative;
   width: 100%;
+  padding: 0px 20px;
 }
 main div.main-container div.celeb-visual-container div.celeb-visual-list {
   max-width: 1400px;
@@ -378,6 +499,7 @@ main div.main-container div.celeb-visual-container div.celeb-visual-list div.cel
 main div.main-container div.review-container {
   background: #f3f4f6;
   margin-top: 150px;
+  padding: 0px 20px;
 }
 main div.main-container div.review-container h2 {
   padding-top: 100px;
@@ -508,6 +630,9 @@ main div.main-container div.review-container div.visual-box div.review-list-box 
 main div.main-container div.review-container div.visual-box div.review-list-box div.review-list div.review-visual-box div.review-prod div.review-sub-text div span {
   font-size: 13px;
 }
+main div.main-container div.instar-container {
+  padding: 0px 20px;
+}
 main div.main-container div.instar-container div.instar-content {
   max-width: 1400px;
   margin: 150px auto 0px;
@@ -541,6 +666,7 @@ main div.main-container div.instar-container div.instar-content div.visual-insta
 }
 main div.main-container div.sns-btn-box {
   margin: 60px auto;
+  padding: 0px 20px;
 }
 main div.main-container div.sns-btn-box div {
   display: flex;
@@ -581,7 +707,7 @@ main div.main-container div.info-banner {
   margin: 0px auto;
   display: flex;
   justify-content: center;
-  padding: 50px 0;
+  padding: 50px 20px;
   border-bottom: 1px solid #e4e4e4;
 }
 main div.main-container div.info-banner div.banner-box {
@@ -621,6 +747,42 @@ main div.main-container div.notice-container div.notice-content-box div.notice-c
 main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box div.notice-list {
   height: 24px;
   width: 100%;
+  -webkit-animation: notice-ani 20s infinite;
+          animation: notice-ani 20s infinite;
+}
+@-webkit-keyframes notice-ani {
+  25% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-24px);
+  }
+  50% {
+    transform: translateY(-48px);
+  }
+  75% {
+    transform: translateY(-72px);
+  }
+  100% {
+    transform: translateY(-96px);
+  }
+}
+@keyframes notice-ani {
+  25% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-24px);
+  }
+  50% {
+    transform: translateY(-48px);
+  }
+  75% {
+    transform: translateY(-72px);
+  }
+  100% {
+    transform: translateY(-96px);
+  }
 }
 main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box div.notice-list ul li a {
   display: flex;

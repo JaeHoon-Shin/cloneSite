@@ -1,0 +1,140 @@
+@charset "UTF-8";
+main div.location-icon-container {
+  border: 1px solid #efefef;
+}
+main div.location-icon-container div.location-icon {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  align-items: center;
+}
+main div.location-icon-container div.location-icon img {
+  width: 20px;
+  margin-right: 5px;
+  filter: invert(60%) sepia(2%) saturate(0%) hue-rotate(149deg) brightness(91%) contrast(92%);
+}
+main div.location-icon-container div.location-icon a {
+  color: #8a8a8a;
+}
+main div.location-icon-container div.location-icon div {
+  color: #8a8a8a;
+}
+main div.content-container {
+  max-width: 1400px;
+  margin: 0px auto;
+  padding: 0 40px 100px 40px;
+  box-sizing: border-box;
+}
+main div.content-container div.text-content {
+  text-align: center;
+}
+main div.content-container div.text-content h2 {
+  font-family: "Noto Sans KR", "맑은고딕", sans-serif;
+  padding: 100px 0 60px 0;
+  font-size: 2.5em;
+  line-height: 1;
+  color: #333;
+}
+main div.content-container div.text-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(229, 229, 229, 0.8980392157);
+  margin-bottom: 100px;
+}
+main div.content-container div.text-content ul li {
+  display: block;
+  width: 25%;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.8980392157);
+}
+main div.content-container div.text-content ul li:nth-child(1), main div.content-container div.text-content ul li:nth-child(5) {
+  border-left: 1px solid #e5e5e5;
+}
+main div.content-container div.text-content ul li a {
+  display: block;
+  font-size: 16px;
+  padding: 15px 0;
+}
+main div.content-container div.content-text-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px;
+  background: #f9f9f9;
+  margin-bottom: 50px;
+}
+main div.content-container div.content-text-box div.text span {
+  display: flex;
+  font-size: 1.1em;
+  color: #333;
+}
+main div.content-container div.content-text-box div.text span p {
+  color: #1b2265;
+  font-weight: bold;
+}
+main div.content-container div.content-text-box div.list-sort {
+  display: flex;
+}
+main div.content-container div.content-text-box div.list-sort a {
+  margin-right: 30px;
+}
+main div.content-container div.content-text-box div.list-sort a:nth-last-child(1) p {
+  line-height: 1;
+  color: #1b2265;
+  border-bottom: 1px solid #1b2265;
+}
+main div.content-container div.content-text-box div.list-sort a p {
+  font-size: 13px;
+  color: #898989;
+}
+main div.content-container div.content-list-container {
+  max-width: 1400px;
+  /* height: 500px; */
+  /* background-color: red; */
+}
+main div.content-container div.content-list-container ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main div.content-container div.content-list-container ul li {
+  width: 24%;
+  display: flex;
+  padding-bottom: 50px;
+}
+main div.content-container div.content-list-container ul li a {
+  position: relative;
+}
+main div.content-container div.content-list-container ul li a div.heart-box {
+  background: url(../img/heart-thin-outline.svg) no-repeat;
+  filter: invert(14%) sepia(19%) saturate(0%) hue-rotate(285deg) brightness(109%) contrast(89%);
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 1;
+}
+main div.content-container div.content-list-container ul li a div.img-box {
+  margin-bottom: 10px;
+}
+main div.content-container div.content-list-container ul li a div.img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main div.content-container div.content-list-container ul li a div.text1 {
+  margin: 20px 0;
+  font-family: "NotoB";
+  font-size: 17px;
+  line-height: 22px;
+  color: #333;
+  font-weight: bold;
+}/*# sourceMappingURL=product.css.map */
