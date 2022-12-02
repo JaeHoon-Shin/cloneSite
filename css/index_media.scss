@@ -1,0 +1,168 @@
+$mobile : 360px;
+$tablet : 760px;
+$pc : 1400px;
+
+@mixin device($min, $max) {
+    @media (min-width:$min) and (max-width:$max) {
+        @content;
+    }
+
+}
+
+@mixin deviceMax($max) {
+    @media (max-width:$max) {
+        @content;
+    }
+
+}
+
+@include deviceMax(1000px) {
+    main {
+        div.main-container {
+            div.notice-container {
+                div.notice-content-box {
+                    div.notice-content {
+                        div.notice-list-box {
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@include device($tablet, $pc ) {
+    main {
+        div.main-container {}
+    }
+}
+
+@include device($mobile, $pc) {
+    main {
+        div.main-container {
+            div.info-banner {
+                display: block;
+                div.banner-box {
+                    margin: 0 auto;
+                    width: 50%;
+                    padding: 20px 0px;
+
+                    &:nth-child(2) {
+                        margin: 0 auto;
+                    }
+                }
+            }
+            div.wrap-new-product {
+                div.product-img-container {
+                    flex-direction: column;
+                    align-items: center;
+
+                    div.main-img-box-container {
+                        margin-bottom: 20px;
+                    }
+
+                    div.sub-img-container {
+                        flex-direction: column;
+                    }
+                }
+            }
+            div.youtube-container {
+                flex-direction: column;
+                align-items: center;
+                max-width: 900px;
+
+                div.sub-text-box {
+                    display: flex;
+                    flex-direction: column;
+                    padding-bottom: 30px;
+                }
+
+                div.youtube-list-container {
+                    width: 100%;
+
+                    div.text-box {
+                        display: none;
+                    }
+
+                    div.youtube-list-box {
+                        ul {
+                            li {
+                                width: 32%;
+                            }
+                        }
+                    }
+                }
+            }
+            div.celeb-visual-container{
+                div.celeb-visual-list{
+                    overflow-x: scroll;
+                    div.celeb-view-box{
+
+                    }
+                }
+            }
+            div.review-container{
+                div.visual-box{
+                    button{
+                        display: none;
+                    }
+                    div.review-list-box{
+                        overflow-x: scroll;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@include device(700px, $pc) {
+    main {
+        div.main-container {
+            justify-content: center;
+
+            div.cate-visual {
+                width: 700px;
+                flex-wrap: wrap;
+                justify-content: center;
+                div.cate-icon {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+@include device($mobile, 700px) {
+    main {
+        div.main-container {
+            justify-content: center;
+            padding: 50px;
+            div.cate-visual {
+                width: 400px;
+                flex-wrap: wrap;
+                justify-content: center;
+                div.cate-icon {
+                    margin-right: 10px;
+
+                    a {
+                        div.icon-box {
+                            width: 90px;
+                            height: 90px;
+                        }
+
+                        div.title-box {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

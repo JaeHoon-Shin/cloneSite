@@ -8,7 +8,6 @@ $pc : 1400px;
     }
 
 }
-
 @mixin deviceMax($max) {
     @media (max-width:$max) {
         @content;
@@ -16,9 +15,7 @@ $pc : 1400px;
 
 }
 
-
 @include device($mobile, $pc ) {
-/* ---------------------header--------------------- */
     header {
         div.header-container {
             display: none;
@@ -46,9 +43,6 @@ $pc : 1400px;
 
     }
 }
-
-
-
 @include deviceMax(851px) {
     header {
         div.header-menu {
@@ -66,7 +60,6 @@ $pc : 1400px;
         }
     }
 }
-
 @include deviceMax($tablet) {
     header {
         div.header-menu {

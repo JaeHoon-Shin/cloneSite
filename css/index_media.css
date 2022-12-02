@@ -1,0 +1,92 @@
+@media (max-width: 1000px) {
+  main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 360px) and (max-width: 1400px) {
+  main div.main-container div.info-banner {
+    display: block;
+  }
+  main div.main-container div.info-banner div.banner-box {
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px 0px;
+  }
+  main div.main-container div.info-banner div.banner-box:nth-child(2) {
+    margin: 0 auto;
+  }
+  main div.main-container div.wrap-new-product div.product-img-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  main div.main-container div.wrap-new-product div.product-img-container div.main-img-box-container {
+    margin-bottom: 20px;
+  }
+  main div.main-container div.wrap-new-product div.product-img-container div.sub-img-container {
+    flex-direction: column;
+  }
+  main div.main-container div.youtube-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+  }
+  main div.main-container div.youtube-container div.sub-text-box {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  main div.main-container div.youtube-container div.youtube-list-container {
+    width: 100%;
+  }
+  main div.main-container div.youtube-container div.youtube-list-container div.text-box {
+    display: none;
+  }
+  main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul li {
+    width: 32%;
+  }
+  main div.main-container div.celeb-visual-container div.celeb-visual-list {
+    overflow-x: scroll;
+  }
+  main div.main-container div.review-container div.visual-box button {
+    display: none;
+  }
+  main div.main-container div.review-container div.visual-box div.review-list-box {
+    overflow-x: scroll;
+  }
+}
+@media (min-width: 700px) and (max-width: 1400px) {
+  main div.main-container {
+    justify-content: center;
+  }
+  main div.main-container div.cate-visual {
+    width: 700px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main div.main-container div.cate-visual div.cate-icon {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 360px) and (max-width: 700px) {
+  main div.main-container {
+    justify-content: center;
+    padding: 50px;
+  }
+  main div.main-container div.cate-visual {
+    width: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main div.main-container div.cate-visual div.cate-icon {
+    margin-right: 10px;
+  }
+  main div.main-container div.cate-visual div.cate-icon a div.icon-box {
+    width: 90px;
+    height: 90px;
+  }
+  main div.main-container div.cate-visual div.cate-icon a div.title-box {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=index_media.css.map */

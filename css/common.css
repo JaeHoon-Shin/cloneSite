@@ -334,7 +334,7 @@ footer div.footer-container div.footer-content div.footer-box04 span {
   font-size: 12px;
 }
 footer div.footer-media {
-  padding: 20px 20px 100px;
+  padding: 20px 20px 150px;
   display: none;
 }
 footer div.footer-media div.footer-media-icon-box ul {
@@ -368,6 +368,45 @@ footer div.footer-media div.footer-media-icon-box ul li:nth-child(5) {
 }
 footer div.footer-media div.footer-media-icon-box ul li:nth-child(5) a {
   background-position: -200px center;
+}
+footer div.footer-media div.footer-nav-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vh;
+  height: 85px;
+  background: #f7f7f7;
+  text-align: center;
+}
+footer div.footer-media div.footer-nav-container div.footer-nav-content {
+  display: flex;
+  padding: 20px 0;
+}
+footer div.footer-media div.footer-nav-container div.footer-nav-content a {
+  width: 18%;
+  margin: 0px 30px;
+}
+footer div.footer-media div.footer-nav-container div.footer-nav-content a div.footer-nav div {
+  background: url(../img/bottom_navi_icons.png) no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  margin: 0 auto 3px;
+}
+footer div.footer-media div.footer-nav-container div.footer-nav-content a:nth-child(1) div.footer-nav div {
+  background-position: -14px 0px;
+}
+footer div.footer-media div.footer-nav-container div.footer-nav-content a:nth-child(2) div.footer-nav div {
+  background-position: -50px 0px;
+}
+footer div.footer-media div.footer-nav-container div.footer-nav-content a:nth-child(3) div.footer-nav div {
+  background-position: -81px 0px;
+}
+footer div.footer-media div.footer-nav-container div.footer-nav-content a:nth-child(4) div.footer-nav div {
+  background-position: -112px 0px;
+}
+footer div.footer-media div.footer-nav-container div.footer-nav-content a:nth-child(5) div.footer-nav div {
+  background-position: -144px 0px;
 }
 footer div.side-bar {
   height: 140px;
@@ -429,7 +468,6 @@ footer div.license-dark div div.img-box img.close {
 }
 
 @media (min-width: 360px) and (max-width: 1400px) {
-  /* ---------------------header--------------------- */
   header div.header-container {
     display: none;
   }

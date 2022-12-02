@@ -1,5 +1,4 @@
 @media (min-width: 360px) and (max-width: 1400px) {
-  /* ---------------------header--------------------- */
   header div.header-container {
     display: none;
   }
