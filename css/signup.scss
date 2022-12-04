@@ -22,12 +22,13 @@ form {
     }
 
     div.content-container {
+        max-width: 1400px;
+        margin: 0 auto;
         div.content {
-            max-width: 1400px;
-            margin: 0 auto;
+            
             display: flex;
             flex-direction: column;
-
+            padding : 0px 20px;
             h2.content-title {
                 font-size: 30px;
                 line-height: 1;
@@ -351,3 +352,4 @@ div.dark-box {
         }
     }
 }
+@import "signup_media";

@@ -18,10 +18,8 @@ main div.login-content-container div.login-content div.container {
 }
 main div.login-content-container div.login-content div.container div.login-content-box {
   position: relative;
-  padding: 0px 55px;
-  margin: 0px 100px;
-  /* height: 320px; */
-  width: 50%;
+  margin: 0px 50px;
+  width: 300px;
 }
 main div.login-content-container div.login-content div.container div.login-content-box form.login-content {
   width: 300px;
@@ -85,10 +83,16 @@ main div.login-content-container div.login-content div.container div.login-conte
 main div.login-content-container div.login-content div.container div.login-content-box form.login-content p {
   font-size: 16px;
 }
+main div.login-content-container div.login-content div.container div.login-content-box div.sns-content {
+  width: 300px;
+}
 main div.login-content-container div.login-content div.container div.login-content-box div.sns-content p {
   font-family: "Noto Sans KR", "맑은고딕", sans-serif;
   font-size: 14px;
   color: #333;
+}
+main div.login-content-container div.login-content div.container div.login-content-box div.sns-content p:nth-child(2) {
+  display: none;
 }
 main div.login-content-container div.login-content div.container div.login-content-box div.sns-content ul {
   display: flex;
@@ -139,4 +143,37 @@ main div.login-content-container div.login-content div.text-box button {
   line-height: 15px;
   font-size: 15px;
   padding: 10px 0px;
+}
+
+@media (max-width: 768px) {
+  main div.login-content-container div.login-content div.container {
+    display: block;
+    padding: 0px 20px;
+  }
+  main div.login-content-container div.login-content div.container div.login-content-box {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+  }
+  main div.login-content-container div.login-content div.container div.login-content-box form.login-content {
+    width: 100%;
+  }
+  main div.login-content-container div.login-content div.container div.login-content-box form.login-content::after {
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  main div.login-content-container div.login-content div.container div.login-content-box div.sns-content {
+    width: 100%;
+  }
+  main div.login-content-container div.login-content div.container div.login-content-box div.sns-content p {
+    display: none;
+  }
+  main div.login-content-container div.login-content div.container div.login-content-box div.sns-content p:nth-child(2) {
+    display: block;
+  }
+  main div.login-content-container div.login-content div.container div.login-content-box div.sns-content ul {
+    align-items: center;
+  }
 }/*# sourceMappingURL=login.css.map */

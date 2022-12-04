@@ -23,11 +23,14 @@ form input[type=text]::placeholder {
 form button {
   cursor: pointer;
 }
-form div.content-container div.content {
+form div.content-container {
   max-width: 1400px;
   margin: 0 auto;
+}
+form div.content-container div.content {
   display: flex;
   flex-direction: column;
+  padding: 0px 20px;
 }
 form div.content-container div.content h2.content-title {
   font-size: 30px;
@@ -271,4 +274,117 @@ div.dark-box div.popup-box ul li:nth-child(3) a {
   background: url(../img/ico_sns03.png) no-repeat center center;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  form div.content-container div.content div.member-info-box ul.member-info li {
+    display: block;
+  }
+  form div.content-container div.content div.member-info-box ul.member-info li p.title {
+    padding: 15px 0px 0px 0px;
+    width: 110px;
+    font-size: 12px;
+    color: #333;
+  }
+  form div.content-container div.content div.member-info-box ul.member-info li div.text-box {
+    padding: 0px 0px 10px 0px;
+  }
+  form div.content-container div.content div.member-info-box ul.member-info li div.text-box input[type=text] {
+    width: 100%;
+    height: 24px;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    font-size: 10px;
+    font-family: "Noto";
+    color: #333;
+    line-height: 35px;
+    box-sizing: border-box;
+    background: #fff;
+    outline: none;
+  }
+  form div.content-container div.content div.member-info-box ul.member-info li div.password-box p {
+    font-size: 12px;
+    padding-left: 0px;
+  }
+  form div.content-container div.content div.member-info-box ul.member-info li div.call-box {
+    display: block;
+  }
+  form div.content-container div.content div.member-info-box ul.member-info li div.call-box div.call {
+    padding: 0px;
+  }
+  form div.content-container div.content div.member-info-box ul.member-info li div.call-box div.call input[type=text] {
+    width: 100%;
+    height: 24px;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    font-size: 10px;
+    font-family: "Noto";
+    color: #333;
+    line-height: 35px;
+    box-sizing: border-box;
+    background: #fff;
+    outline: none;
+  }
+  form div.content-container div.content div.member-info-box ul.member-info li div.call-box div.call button {
+    margin: 5px 0px;
+    font-size: 11px;
+    line-height: 10px;
+    text-align: center;
+  }
+  form div.content-container div.content div.member-info-box ul.member-info li div.brt-box {
+    display: block;
+  }
+  form div.content-container div.content div.member-info-box ul.member-info li div.brt-box div.gender-box {
+    margin: 5px 0px 5px;
+  }
+  form div.content-container div.content div.member-info-box ul.member-info li div.brt-box div.radio-box {
+    margin: 5px 0px 5px;
+  }
+  form div.content-container div.content div.member-info-box ul.member-info li div.brt-box div.radio-box label {
+    font-size: 11px;
+  }
+  form div.content-container div.content div.agreement-area div.agreement-year h2.agreement-year-title {
+    font-size: 11px;
+  }
+  form div.content-container div.content div.agreement-area div.agreement-year div.agreement-year-box {
+    font-size: 10px;
+  }
+  form div.content-container div.content div.agreement-area div.agreement-year div.cheked-box span {
+    font-size: 11px;
+  }
+  form div.content-container div.content div.agreement-area div.agreement-year div.agreement-year-text {
+    font-size: 11px;
+  }
+  form div.content-container div.content div.cheked-box-container div.cheked-box-all input[type=checkbox] {
+    font-size: 13px;
+    margin: 0;
+  }
+  form div.content-container div.content div.cheked-box-container div.cheked-box-all label {
+    font-size: 11px;
+  }
+  form div.content-container div.content div.cheked-box-container div.cheked-box input[type=checkbox] {
+    font-size: 13px;
+    margin: 0;
+  }
+  form div.content-container div.content div.cheked-box-container div.cheked-box label {
+    font-size: 11px;
+  }
+  form div.content-container div.content div.cheked-box-container div.cheked-box div {
+    margin-top: 10px;
+  }
+  form div.content-container div.content div.cheked-box-container div.cheked-box div:nth-last-child(2) div.marketing-box {
+    display: block;
+  }
+  form div.content-container div.content div.cheked-box-container div.cheked-box div:nth-last-child(2) div.marketing-box p {
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
+  form div.content-container div.content div.cheked-box-container div.cheked-box div:nth-last-child(2) div.marketing-box label {
+    font-size: 11px;
+  }
+  form div.content-container div.content div.cheked-box-container div.submit-box button {
+    margin-top: 20px;
+    padding: 10px 0px;
+    font-size: 11px;
+  }
 }/*# sourceMappingURL=signup.css.map */

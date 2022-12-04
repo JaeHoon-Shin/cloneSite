@@ -20,10 +20,8 @@ main {
 
                 div.login-content-box {
                     position: relative;
-                    padding: 0px 55px;
-                    margin: 0px 100px;
-                    /* height: 320px; */
-                    width: 50%;
+                    margin: 0px 50px;
+                    width: 300px;
 
                     form.login-content {
                         width: 300px;
@@ -100,10 +98,14 @@ main {
                     }
 
                     div.sns-content {
+                        width: 300px;
                         p {
                             font-family: 'Noto Sans KR', '맑은고딕', sans-serif;
                             font-size: 14px;
                             color: #333;
+                            &:nth-child(2){
+                                display: none;
+                            }
                         }
 
                         ul {
@@ -172,3 +174,4 @@ main {
         }
     }
 }
+@import "login_media"
