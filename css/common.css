@@ -154,8 +154,8 @@ header div.header-menu div.gnb-wrapper div.menu-box div.all-cate a div {
   width: 26px;
   height: 27px;
   float: left;
-  padding-right: 10px;
   background-position: -211px;
+  margin-right: 20px;
 }
 header div.header-menu div.gnb-wrapper div.menu-box div.sub-menu {
   font-size: 18px;
@@ -206,7 +206,6 @@ header div.header-menu div.gnb-wrapper div.menu-box div.serch-box button div {
   height: 20px;
   width: 20px;
   background-position: -186px;
-  margin: 7px 10px;
 }
 
 footer {
@@ -249,14 +248,23 @@ footer div.footer-container div.footer-content div.call-list {
 footer div.footer-container div.footer-content div.call-list p {
   color: #757575;
 }
-footer div.footer-container div.footer-content div.call-list div.call-box div span {
+footer div.footer-container div.footer-content div.call-list div.call-box div {
+  display: flex;
+}
+footer div.footer-container div.footer-content div.call-list div.call-box div div {
+  margin-right: 50px;
+}
+footer div.footer-container div.footer-content div.call-list div.call-box div div span {
   color: #757575;
 }
-footer div.footer-container div.footer-content div.call-list div.call-box div span.call-title {
+footer div.footer-container div.footer-content div.call-list div.call-box div div span.call-title {
   padding-right: 10px;
 }
-footer div.footer-container div.footer-content div.call-list div.call-box div span.call-number {
+footer div.footer-container div.footer-content div.call-list div.call-box div div span.call-number {
   padding-right: 50px;
+}
+footer div.footer-container div.footer-content div.call-list div.call-box div div span.call-number:nth-last-child(1) {
+  padding-right: 0px;
 }
 footer div.footer-container div.footer-content div.footer-icon-box ul.footer-sns-icon {
   float: right;
@@ -309,21 +317,27 @@ footer div.footer-container div.footer-content div.footer-box01 span.bold {
 }
 footer div.footer-container div.footer-content div.footer-box02 {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
-footer div.footer-container div.footer-content div.footer-box02 span {
+footer div.footer-container div.footer-content div.footer-box02 div {
   color: #757575;
   margin-right: 20px;
   line-height: 25px;
 }
-footer div.footer-container div.footer-content div.footer-box03 span {
+footer div.footer-container div.footer-content div.footer-box03 {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer div.footer-container div.footer-content div.footer-box03 div {
   color: #757575;
   margin-right: 20px;
   line-height: 25px;
 }
-footer div.footer-container div.footer-content div.footer-box03 span.license-btn {
+footer div.footer-container div.footer-content div.footer-box03 div.license-btn {
   background: #aaa;
 }
-footer div.footer-container div.footer-content div.footer-box03 span.license-btn a {
+footer div.footer-container div.footer-content div.footer-box03 div.license-btn a {
   padding: 0px 3px;
   color: #fff;
 }
@@ -332,6 +346,20 @@ footer div.footer-container div.footer-content div.footer-box04 {
 }
 footer div.footer-container div.footer-content div.footer-box04 span {
   font-size: 12px;
+}
+footer div.footer-container div.footer-content ul.m-footer-box01 {
+  display: none;
+}
+footer div.footer-container div.footer-content ul.m-footer-box01 li {
+  margin-bottom: 15px;
+}
+footer div.footer-container div.footer-content ul.m-footer-box01 li a {
+  font-size: 15px;
+  color: #757575;
+  margin-right: 30px;
+}
+footer div.footer-container div.footer-content ul.m-footer-box01 .bold a {
+  font-weight: bold;
 }
 footer div.footer-media {
   padding: 20px 20px 150px;
@@ -373,7 +401,7 @@ footer div.footer-media div.footer-nav-container {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100vh;
+  width: 100%;
   height: 85px;
   background: #f7f7f7;
   text-align: center;
@@ -482,6 +510,9 @@ footer div.license-dark div div.img-box img.close {
   header div.header-menu div.gnb-wrapper div.logo-box div.btn-box {
     display: block;
   }
+  header div.header-menu div.gnb-wrapper div.logo-box div.btn-box img {
+    margin-bottom: 5px;
+  }
 }
 @media (max-width: 851px) {
   header div.header-menu div.gnb-wrapper div.menu-box div.all-cate {
@@ -492,6 +523,9 @@ footer div.license-dark div div.img-box img.close {
   }
 }
 @media (max-width: 760px) {
+  header div.header-menu div.gnb-wrapper div.logo-box a img {
+    width: 100%;
+  }
   header div.header-menu div.gnb-wrapper div.m-header-top {
     display: none;
   }
@@ -502,12 +536,21 @@ footer div.license-dark div div.img-box img.close {
   }
   header div.header-menu div.gnb-wrapper div.logo-box div.btn-box {
     display: block;
+    position: absolute;
+    top: 47px;
+    left: 140px;
+  }
+  header div.header-menu div.gnb-wrapper div.logo-box div.btn-box img {
+    margin-bottom: 5px;
   }
   header div.header-menu div.gnb-wrapper div.menu-box div.all-cate {
     display: none;
   }
   header div.header-menu div.gnb-wrapper div.menu-box div.serch-box {
     display: none;
+  }
+  footer div.footer-container div.footer-content div.call-list div.call-box div {
+    display: block;
   }
 }
 @media (max-width: 1000px) {
@@ -516,6 +559,12 @@ footer div.license-dark div div.img-box img.close {
   }
   footer div.footer-container div.footer-content div.callFamly-box select {
     display: none;
+  }
+  footer div.footer-container div.footer-content div.footer-box01 {
+    display: none;
+  }
+  footer div.footer-container div.footer-content ul {
+    display: block;
   }
   footer div.footer-container div.footer-content div.footer-icon-box {
     display: none;

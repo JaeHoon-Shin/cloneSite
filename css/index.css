@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body div.popup-background {
   position: fixed;
   top: 0;
@@ -208,10 +212,12 @@ main div.main-container div.cate-visual div.cate-icon a div.title-box {
   margin: 40px 0px 20px;
   font-size: 18px;
 }
+main div.main-container div.cate-visual div.cate-icon a div.title-box span br {
+  display: none;
+}
 main div.main-container div.emons-story-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0px 20px;
 }
 main div.main-container div.emons-story-container h2 {
   margin-bottom: 40px;
@@ -221,9 +227,12 @@ main div.main-container div.emons-story-container h2 {
 }
 main div.main-container div.emons-story-container div.specevent_visual {
   display: flex;
+  overflow-x: scroll;
 }
 main div.main-container div.emons-story-container div.specevent_visual div.specevent_icon {
-  margin-right: 25px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  padding-bottom: 20pxs;
 }
 main div.main-container div.emons-story-container div.specevent_visual div.specevent_icon a img {
   width: 100%;
@@ -333,6 +342,9 @@ main div.main-container div.youtube-container div.sub-text-box span:nth-child(2)
   margin-top: 20px;
   font-size: 36px;
   font-weight: bold;
+}
+main div.main-container div.youtube-container div.sub-text-box span:nth-child(2) br {
+  display: none;
 }
 main div.main-container div.youtube-container div.play-box {
   width: 100%;
@@ -512,16 +524,13 @@ main div.main-container div.celeb-visual-container div.celeb-visual-list div.cel
 main div.main-container div.review-container {
   background: #f3f4f6;
   margin-top: 150px;
-  padding: 0px 20px;
+  padding: 40px 40px;
 }
 main div.main-container div.review-container h2 {
-  padding-top: 100px;
+  padding: 0px 0px 30px;
   text-align: center;
   font-weight: bold;
-  font-size: 30px;
-}
-main div.main-container div.review-container div.visual-box {
-  padding: 100px 100px;
+  font-size: 2rem;
 }
 main div.main-container div.review-container div.visual-box button {
   position: absolute;
@@ -654,7 +663,7 @@ main div.main-container div.instar-container div.instar-content {
 main div.main-container div.instar-container div.instar-content h2 {
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 main div.main-container div.instar-container div.instar-content h3 {
   margin: 0 0 50px;
@@ -676,6 +685,21 @@ main div.main-container div.instar-container div.instar-content div.visual-insta
 }
 main div.main-container div.instar-container div.instar-content div.visual-instar ul li:nth-last-child(1) {
   margin-right: 0px;
+}
+main div.main-container div.instar-container div.instar-content div.m-visual {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+main div.main-container div.instar-container div.instar-content div.m-visual a {
+  width: 40%;
+  margin: 5px;
+}
+main div.main-container div.instar-container div.instar-content div.m-visual a img {
+  width: 100%;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main div.main-container div.sns-btn-box {
   margin: 60px auto;
@@ -731,7 +755,7 @@ main div.main-container div.info-banner div.banner-box a img {
   width: 100%;
   border-radius: 5px;
 }
-main div.main-container div.info-banner div.banner-box:nth-last-child(1) {
+s main div.main-container div.info-banner div.banner-box:nth-last-child(1) {
   margin-right: 0px;
 }
 main div.main-container div.notice-container {
@@ -755,11 +779,11 @@ main div.main-container div.notice-container div.notice-content-box div.notice-c
 main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box {
   float: left;
   height: 24px;
+  width: 100%;
   overflow: hidden;
 }
 main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box div.notice-list {
   height: 24px;
-  width: 100%;
   -webkit-animation: notice-ani 20s infinite;
           animation: notice-ani 20s infinite;
 }
@@ -797,13 +821,12 @@ main div.main-container div.notice-container div.notice-content-box div.notice-c
     transform: translateY(-96px);
   }
 }
-main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box div.notice-list ul li a {
-  display: flex;
-}
 main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box div.notice-list ul li a p {
   font-size: 16px;
+  display: inline-block;
 }
 main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box div.notice-list ul li a span {
+  display: inline-block;
   margin-left: 40px;
   color: #cecece;
   font-weight: lighter;
@@ -834,24 +857,59 @@ main div.main-container div.notice-container div.notice-content-box div.button-b
   left: -50px;
 }
 
+@media (max-width: 760px) {
+  main div.main-container div.instar-container div.instar-content h2 {
+    font-size: 1.6rem;
+  }
+  main div.main-container div.instar-container div.instar-content div.visual-instar {
+    display: none;
+  }
+  main div.main-container div.instar-container div.instar-content div.m-visual {
+    display: flex;
+  }
+}
 @media (max-width: 1000px) {
+  main div.main-container div.notice-container {
+    padding-bottom: 30px;
+  }
   main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box {
     position: absolute;
     bottom: 0;
+  }
+  main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box div.notice-list ul li a {
     width: 100%;
+  }
+  main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box div.notice-list ul li a p {
+    width: 70%;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box div.notice-list ul li a span {
+    display: inline-block;
+  }
+  main div.main-container div.review-container h2 {
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 360px) and (max-width: 1400px) {
+  main div.main-container div.cate-visual div.cate-icon a div.title-box span br {
+    display: block;
+  }
   main div.main-container div.info-banner {
     display: block;
   }
   main div.main-container div.info-banner div.banner-box {
     margin: 0 auto;
-    width: 50%;
+    width: 70%;
     padding: 20px 0px;
   }
   main div.main-container div.info-banner div.banner-box:nth-child(2) {
     margin: 0 auto;
+  }
+  main div.main-container div.wrap-new-product {
+    margin-bottom: 0px;
   }
   main div.main-container div.wrap-new-product div.product-img-container {
     flex-direction: column;
@@ -865,13 +923,19 @@ main div.main-container div.notice-container div.notice-content-box div.button-b
   }
   main div.main-container div.youtube-container {
     flex-direction: column;
-    align-items: center;
     max-width: 900px;
   }
   main div.main-container div.youtube-container div.sub-text-box {
     display: flex;
     flex-direction: column;
     padding-bottom: 30px;
+    text-align: left;
+  }
+  main div.main-container div.youtube-container div.sub-text-box span {
+    line-height: 1.3;
+  }
+  main div.main-container div.youtube-container div.sub-text-box span:nth-child(2) br {
+    display: block;
   }
   main div.main-container div.youtube-container div.youtube-list-container {
     width: 100%;
@@ -884,6 +948,7 @@ main div.main-container div.notice-container div.notice-content-box div.button-b
   }
   main div.main-container div.celeb-visual-container div.celeb-visual-list {
     overflow-x: scroll;
+    margin-bottom: 0px;
   }
   main div.main-container div.review-container div.visual-box button {
     display: none;
@@ -908,10 +973,9 @@ main div.main-container div.notice-container div.notice-content-box div.button-b
 @media (min-width: 360px) and (max-width: 700px) {
   main div.main-container {
     justify-content: center;
-    padding: 50px;
   }
   main div.main-container div.cate-visual {
-    width: 400px;
+    width: 360px;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -919,10 +983,10 @@ main div.main-container div.notice-container div.notice-content-box div.button-b
     margin-right: 10px;
   }
   main div.main-container div.cate-visual div.cate-icon a div.icon-box {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
   }
   main div.main-container div.cate-visual div.cate-icon a div.title-box {
-    font-size: 14px;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=index.css.map */

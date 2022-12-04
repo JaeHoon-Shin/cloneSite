@@ -130,7 +130,6 @@ header {
                     a {
                         padding: 15px;
                         font-size: 12px;
-
                     }
                 }
             }
@@ -139,7 +138,6 @@ header {
         div.gnb-wrapper {
             max-width: 1400px;
             margin: 0 auto;
-
 
             div.m-header-top {
                 display: none;
@@ -196,8 +194,8 @@ header {
                             width: 26px;
                             height: 27px;
                             float: left;
-                            padding-right: 10px;
                             background-position: -211px;
+                            margin-right: 20px;
                         }
                     }
                 }
@@ -258,7 +256,6 @@ header {
                             height: 20px;
                             width: 20px;
                             background-position: -186px;
-                            margin: 7px 10px;
                         }
                     }
                 }
@@ -266,8 +263,6 @@ header {
         }
     }
 }
-
-
 
 footer {
     border-top: 1px solid #e4e4e4;
@@ -313,16 +308,22 @@ footer {
 
                 div.call-box {
                     div {
-                        span {
-                            color: #757575;
-                        }
+                        display: flex;
+                        div {
+                            margin-right: 50px;
+                            span {
+                                color: #757575;
+                            }
+                            span.call-title {
+                                padding-right: 10px;
+                            }
 
-                        span.call-title {
-                            padding-right: 10px;
-                        }
-
-                        span.call-number {
-                            padding-right: 50px;
+                            span.call-number {
+                                padding-right: 50px;
+                                &:nth-last-child(1) {
+                                    padding-right: 0px;
+                                }
+                            }
                         }
                     }
                 }
@@ -383,17 +384,14 @@ footer {
 
             div.footer-box01 {
                 margin-top: 30px;
-
                 span {
                     font-size: 15px;
                     color: #757575;
                     margin-right: 30px;
-
                     &:nth-last-child(1) {
                         margin-right: 0px;
                     }
                 }
-
                 span.bold {
                     font-weight: bold;
                 }
@@ -401,8 +399,9 @@ footer {
 
             div.footer-box02 {
                 margin-top: 20px;
-
-                span {
+                display: flex;
+                flex-wrap: wrap;
+                div {
                     color: #757575;
                     margin-right: 20px;
                     line-height: 25px;
@@ -410,13 +409,15 @@ footer {
             }
 
             div.footer-box03 {
-                span {
+                display: flex;
+                flex-wrap: wrap;
+                div {
                     color: #757575;
                     margin-right: 20px;
                     line-height: 25px;
                 }
 
-                span.license-btn {
+                div.license-btn {
                     background: #aaa;
 
                     a {
@@ -433,6 +434,22 @@ footer {
                     font-size: 12px;
                 }
             }
+            ul.m-footer-box01 {
+                display: none;
+                li {
+                    margin-bottom: 15px;
+                    a {
+                        font-size: 15px;
+                        color: #757575;
+                        margin-right: 30px;
+                    }
+                }
+                .bold {
+                    a {
+                        font-weight: bold;
+                    }
+                }
+            }
         }
     }
 
@@ -440,7 +457,8 @@ footer {
         padding: 20px 20px 150px;
         display: none;
 
-        div.footer-media-select-box {}
+        div.footer-media-select-box {
+        }
 
         div.footer-media-icon-box {
             ul {
@@ -494,7 +512,7 @@ footer {
             position: fixed;
             bottom: 0;
             left: 0;
-            width: 100vh;
+            width: 100%;
             height: 85px;
             background: #f7f7f7;
             text-align: center;
@@ -507,19 +525,16 @@ footer {
                     margin: 0px 30px;
 
                     div.footer-nav {
-                        
                         div {
                             background: url(../img/bottom_navi_icons.png) no-repeat;
                             background-size: cover;
                             width: 25px;
                             height: 25px;
                             margin: 0 auto 3px;
-                            
                         }
                     }
 
                     &:nth-child(1) {
-                        
                         div.footer-nav {
                             div {
                                 background-position: -14px 0px;
@@ -630,10 +645,8 @@ footer {
                     cursor: pointer;
                 }
             }
-
-
         }
     }
 }
 
-@import "common_media"
+@import "common_media";

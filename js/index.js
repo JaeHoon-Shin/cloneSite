@@ -7,7 +7,7 @@ const elPopUpClose = document.querySelectorAll('div.popup-text-container > div >
 
 let mainViewNum = 0;
 function mainSlideFun(n) {
-    mainViewAll[n].style = "left:" + ((-100) * n) + "%; opacity:1";
+    mainViewAll[n].style = "left:"+((-100)*n)+"%; opacity:1";
 }
 let mainViewAll = document.querySelectorAll(`main>div.visual-box>div.img-box-list>div.img-box`);
 let mainViewAni = setInterval(function () {

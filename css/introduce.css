@@ -1,5 +1,6 @@
 main div.location-icon-container {
   border: 1px solid #efefef;
+  padding: 0px 20px;
 }
 main div.location-icon-container div.location-icon {
   display: flex;
@@ -20,6 +21,7 @@ main div.location-icon-container div.location-icon div {
   color: #8a8a8a;
 }
 main div.info-nab {
+  padding: 0px 20px;
   background-color: #f9f9f9;
 }
 main div.info-nab h2 {
@@ -48,8 +50,27 @@ main div.info-nab div.nab-box div.list-box div.list p img {
   width: 20px;
 }
 main div.title-box {
+  padding: 0px 20px;
   max-width: 1400px;
   margin: 100px auto 0px;
+}
+main div.title-box div.m-text01 {
+  display: none;
+  padding-bottom: 10px;
+}
+main div.title-box div.m-text01 span {
+  font-size: 10px;
+  line-height: 32px;
+  font-family: "Open";
+  line-height: 1;
+  color: #555;
+}
+main div.title-box div.m-text01 p {
+  font-size: 22px;
+  font-family: "NotoB";
+  line-height: 36px;
+  color: #333;
+  font-weight: bold;
 }
 main div.title-box div.title {
   margin: 50px 0px;
@@ -71,6 +92,7 @@ main div.title-box div.text-container {
 }
 main div.title-box div.text-container div.text-box {
   width: 50%;
+  order: 1;
 }
 main div.title-box div.text-container div.text-box div.text01 {
   padding-bottom: 50px;
@@ -100,6 +122,7 @@ main div.title-box div.text-container div.text-box div.text03 p {
 }
 main div.title-box div.text-container div.onner-img-box {
   width: 45%;
+  order: 2;
 }
 main div.title-box div.text-container div.onner-img-box img {
   width: 100%;
@@ -117,4 +140,45 @@ main div.title-box div.text-container div.onner-img-box div p {
   font-size: 33px;
   line-height: 40px;
   color: #333;
+}
+
+@media (max-width: 900px) {
+  main div.title-box div.title p {
+    font-size: 50px;
+  }
+  main div.title-box div.text-container {
+    display: block;
+  }
+  main div.title-box div.text-container div.onner-img-box {
+    width: 100%;
+  }
+  main div.title-box div.text-container div.text-box {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  main div.title-box div.m-text01 {
+    display: block;
+  }
+  main div.title-box div.text-container div.onner-img-box div span {
+    font-size: 10px;
+    line-height: 30px;
+    color: #333;
+  }
+  main div.title-box div.text-container div.onner-img-box div p {
+    font-size: 22px;
+    line-height: 30px;
+    color: #333;
+  }
+  main div.title-box div.text-container div.text-box div.text01 {
+    display: none;
+  }
+  main div.title-box div.text-container div.text-box div.text02 span {
+    font-size: 13px;
+  }
+  main div.title-box div.text-container div.text-box div.text03 p {
+    font-size: 11px;
+    line-height: 18px;
+    color: #333;
+  }
 }/*# sourceMappingURL=introduce.css.map */

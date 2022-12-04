@@ -34,6 +34,9 @@ $pc : 1400px;
 
                     div.btn-box {
                         display: block;
+                        img{
+                            margin-bottom: 5px;
+                        }
                     }
                 }
             }
@@ -64,6 +67,13 @@ $pc : 1400px;
     header {
         div.header-menu {
             div.gnb-wrapper {
+                div.logo-box{
+                    a{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
                 div.m-header-top {
                     display: none;
                 }
@@ -74,15 +84,33 @@ $pc : 1400px;
 
                     div.btn-box {
                         display: block;
+                        position: absolute;
+                        top: 47px;
+                        left: 140px;
+                        img{
+                            margin-bottom: 5px;
+                        }
                     }
                 }
                 div.menu-box {
                     div.all-cate {
                         display: none;
                     }
-
                     div.serch-box {
                         display: none;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        div.footer-container {
+            div.footer-content {
+                div.call-list {
+                    div.call-box {
+                        div {
+                            display: block;
+                            }
                     }
                 }
             }
@@ -100,6 +128,12 @@ $pc : 1400px;
                     select{
                         display: none;
                     }
+                }
+                div.footer-box01{
+                    display: none;
+                }
+                ul{
+                    display: block;
                 }
                 div.footer-icon-box{
                     display: none;

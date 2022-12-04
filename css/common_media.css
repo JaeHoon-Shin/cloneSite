@@ -13,6 +13,9 @@
   header div.header-menu div.gnb-wrapper div.logo-box div.btn-box {
     display: block;
   }
+  header div.header-menu div.gnb-wrapper div.logo-box div.btn-box img {
+    margin-bottom: 5px;
+  }
 }
 @media (max-width: 851px) {
   header div.header-menu div.gnb-wrapper div.menu-box div.all-cate {
@@ -23,6 +26,9 @@
   }
 }
 @media (max-width: 760px) {
+  header div.header-menu div.gnb-wrapper div.logo-box a img {
+    width: 100%;
+  }
   header div.header-menu div.gnb-wrapper div.m-header-top {
     display: none;
   }
@@ -33,12 +39,21 @@
   }
   header div.header-menu div.gnb-wrapper div.logo-box div.btn-box {
     display: block;
+    position: absolute;
+    top: 47px;
+    left: 140px;
+  }
+  header div.header-menu div.gnb-wrapper div.logo-box div.btn-box img {
+    margin-bottom: 5px;
   }
   header div.header-menu div.gnb-wrapper div.menu-box div.all-cate {
     display: none;
   }
   header div.header-menu div.gnb-wrapper div.menu-box div.serch-box {
     display: none;
+  }
+  footer div.footer-container div.footer-content div.call-list div.call-box div {
+    display: block;
   }
 }
 @media (max-width: 1000px) {
@@ -47,6 +62,12 @@
   }
   footer div.footer-container div.footer-content div.callFamly-box select {
     display: none;
+  }
+  footer div.footer-container div.footer-content div.footer-box01 {
+    display: none;
+  }
+  footer div.footer-container div.footer-content ul {
+    display: block;
   }
   footer div.footer-container div.footer-content div.footer-icon-box {
     display: none;

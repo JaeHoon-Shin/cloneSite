@@ -1,0 +1,78 @@
+$mobile: 360px;
+$tablet: 760px;
+$pc: 1400px;
+
+@mixin device($min, $max) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin deviceMax($max) {
+    @media (max-width: $max) {
+        @content;
+    }
+}
+@include deviceMax(900px) {
+    main {
+        div.title-box {
+            div.title {
+                p {
+                    font-size: 50px;
+                }
+            }
+            div.text-container {
+                display: block;
+
+                div.onner-img-box {
+                    width: 100%;
+                }
+                div.text-box {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@include deviceMax(768px) {
+    main {
+        div.title-box {
+            div.m-text01 {
+                display: block;
+            }
+            div.text-container {
+                div.onner-img-box {
+                    div {
+                        span {
+                            font-size: 10px;
+                            line-height: 30px;
+                            color: #333;
+                        }
+                        p {
+                            font-size: 22px;
+                            line-height: 30px;
+                            color: #333;
+                        }
+                    }
+                }
+                div.text-box {
+                    div.text01 {
+                        display: none;
+                    }
+                    div.text02 {
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+                    div.text03 {
+                        p {
+                            font-size: 11px;
+                            line-height: 18px;
+                            color: #333;
+                        }
+                }
+            }
+        }
+    }
+}
+}
