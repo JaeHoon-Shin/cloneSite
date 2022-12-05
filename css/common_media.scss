@@ -8,6 +8,7 @@ $pc : 1400px;
     }
 
 }
+
 @mixin deviceMax($max) {
     @media (max-width:$max) {
         @content;
@@ -34,7 +35,8 @@ $pc : 1400px;
 
                     div.btn-box {
                         display: block;
-                        img{
+
+                        img {
                             margin-bottom: 5px;
                         }
                     }
@@ -42,10 +44,10 @@ $pc : 1400px;
             }
         }
     }
-    footer{
 
-    }
+    footer {}
 }
+
 @include deviceMax(851px) {
     header {
         div.header-menu {
@@ -63,84 +65,122 @@ $pc : 1400px;
         }
     }
 }
+
 @include deviceMax($tablet) {
     header {
         div.header-menu {
             div.gnb-wrapper {
-                div.logo-box{
-                    a{
-                        img{
-                            width: 100%;
-                        }
-                    }
-                }
                 div.m-header-top {
                     display: none;
                 }
+
                 div.logo-box {
                     text-align: left;
                     max-width: 130px;
-                    padding-left: 30px;
+                    padding-left: 20px;
+
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
 
                     div.btn-box {
                         display: block;
                         position: absolute;
                         top: 47px;
                         left: 140px;
-                        img{
+
+                        img {
                             margin-bottom: 5px;
                         }
                     }
                 }
+
                 div.menu-box {
+                    padding-left: 20px;
+
                     div.all-cate {
                         display: none;
                     }
+
                     div.serch-box {
                         display: none;
+                    }
+
+                    div.sub-menu {
+                        ul {
+                            li {
+                                margin-left: 30px;
+
+                                &:nth-child(1) {
+                                    margin-left: 0px;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
-    footer{
+
+    footer {
         div.footer-container {
             div.footer-content {
                 div.call-list {
                     div.call-box {
                         div {
                             display: block;
-                            }
+                        }
                     }
                 }
             }
         }
     }
 }
-@include deviceMax(1000px){
-    footer{
-        div.side-bar{
-            display: none;
-        }
-        div.footer-container{
-            div.footer-content{
-                div.callFamly-box{
-                    select{
+
+@include deviceMax(1000px) {
+    header {
+        div.header-menu {
+            div.tab-container {
+                div.tab-content {
+                    div.tab-banner-container {
                         display: none;
                     }
                 }
-                div.footer-box01{
+            }
+        }
+
+    }
+
+    footer {
+        div.side-bar {
+            display: none;
+        }
+
+        div.footer-container {
+            div.footer-content {
+                div.callFamly-box {
+                    select {
+                        display: none;
+                    }
+                }
+
+                div.footer-box01 {
                     display: none;
                 }
-                ul{
+
+                ul {
                     display: block;
                 }
-                div.footer-icon-box{
+
+                div.footer-icon-box {
                     display: none;
                 }
             }
         }
-        div.footer-media{
+
+        div.footer-media {
             display: block;
         }
     }

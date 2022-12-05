@@ -80,6 +80,7 @@
   }
   main div.main-container div.youtube-container div.youtube-list-container {
     width: 100%;
+    margin-left: 0px;
   }
   main div.main-container div.youtube-container div.youtube-list-container div.text-box {
     display: none;

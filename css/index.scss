@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 body {
     div.popup-background {
         position: fixed;
@@ -126,7 +124,6 @@ main {
                 &:nth-child(1) {
                     opacity: 1;
                 }
-
                 /* animation: v-slied 20s infinite; 
                 @keyframes v-slied {
                     20%{
@@ -144,7 +141,7 @@ main {
                     100%{
                         left:-9515px;
                     }
-                }*/
+                } */
                 a {
                     img {
                         width: 100%;
@@ -267,7 +264,7 @@ main {
                 div.specevent_icon {
                     margin-right: 10px;
                     flex-shrink: 0;
-                    padding-bottom: 20pxs;
+                    padding-bottom: 20px;
                     a {
                         img {
                             width: 100%;

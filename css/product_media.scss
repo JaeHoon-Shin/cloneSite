@@ -1,0 +1,92 @@
+$mobile: 360px;
+$tablet: 760px;
+$pc: 1400px;
+
+@mixin device($min, $max) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin deviceMax($max) {
+    @media (max-width: $max) {
+        @content;
+    }
+}
+@include device($tablet,1000px ){
+
+}
+@include deviceMax(767px){
+    main{
+        div.content-container{
+            div.content-text-box{
+                align-items: center;
+            }
+        }
+    }
+}
+
+@include deviceMax(1100px){
+    main{
+        div.content-container{
+            div.content-list-container{
+                ul{
+                    li{
+                        width: 33%;
+                        &:nth-child(4n+1){
+                            margin-left: 0.3%;
+                        }
+                        &:nth-child(3n+1){
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include deviceMax($tablet){
+    main{
+        div.content-container{
+            div.text-content {
+                ul {
+                    li {
+                        width: 33.3%;
+                        &:nth-child(4n+1) {
+                            border-left: 0px
+                        }
+                        &:nth-child(3n+1){
+                            border-left: 1px solid #e5e5e5;
+                        }
+                        
+                       
+                    }
+    
+                }
+    
+            }
+            div.content-text-box{              
+                div.list-sort{
+                    display: block;
+                }
+            }
+            div.content-list-container{
+                ul{
+                    li{
+                        width: 49.6%;
+                        &:nth-child(4n+1){
+                            margin-left: 0.3%;
+                        }
+                        &:nth-child(3n+1){
+                            margin-left: 0.3%;
+                        }
+                        &:nth-child(2n+1){
+                            margin-left: 0.3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

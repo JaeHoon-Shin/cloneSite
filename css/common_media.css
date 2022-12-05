@@ -26,16 +26,16 @@
   }
 }
 @media (max-width: 760px) {
-  header div.header-menu div.gnb-wrapper div.logo-box a img {
-    width: 100%;
-  }
   header div.header-menu div.gnb-wrapper div.m-header-top {
     display: none;
   }
   header div.header-menu div.gnb-wrapper div.logo-box {
     text-align: left;
     max-width: 130px;
-    padding-left: 30px;
+    padding-left: 20px;
+  }
+  header div.header-menu div.gnb-wrapper div.logo-box a img {
+    width: 100%;
   }
   header div.header-menu div.gnb-wrapper div.logo-box div.btn-box {
     display: block;
@@ -46,17 +46,29 @@
   header div.header-menu div.gnb-wrapper div.logo-box div.btn-box img {
     margin-bottom: 5px;
   }
+  header div.header-menu div.gnb-wrapper div.menu-box {
+    padding-left: 20px;
+  }
   header div.header-menu div.gnb-wrapper div.menu-box div.all-cate {
     display: none;
   }
   header div.header-menu div.gnb-wrapper div.menu-box div.serch-box {
     display: none;
   }
+  header div.header-menu div.gnb-wrapper div.menu-box div.sub-menu ul li {
+    margin-left: 30px;
+  }
+  header div.header-menu div.gnb-wrapper div.menu-box div.sub-menu ul li:nth-child(1) {
+    margin-left: 0px;
+  }
   footer div.footer-container div.footer-content div.call-list div.call-box div {
     display: block;
   }
 }
 @media (max-width: 1000px) {
+  header div.header-menu div.tab-container div.tab-content div.tab-banner-container {
+    display: none;
+  }
   footer div.side-bar {
     display: none;
   }

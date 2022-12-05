@@ -147,12 +147,13 @@ $pc: 1400px;
 
                 div.youtube-list-container {
                     width: 100%;
-
+                    margin-left: 0px;
                     div.text-box {
                         display: none;
                     }
 
                     div.youtube-list-box {
+                        
                         ul {
                             li {
                                 width: 32%;
