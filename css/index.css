@@ -289,6 +289,7 @@ main div.main-container div.wrap-new-product div.product-img-container {
 }
 main div.main-container div.wrap-new-product div.product-img-container div.main-img-box-container {
   width: 50%;
+  margin-right: 10px;
 }
 main div.main-container div.wrap-new-product div.product-img-container div.main-img-box-container div.main-img-box {
   width: 100%;
@@ -302,6 +303,7 @@ main div.main-container div.wrap-new-product div.product-img-container div.sub-i
   width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 main div.main-container div.wrap-new-product div.product-img-container div.sub-img-container div.sub-img-box {
   display: flex;
