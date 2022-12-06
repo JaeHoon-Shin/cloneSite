@@ -198,7 +198,6 @@ form div.content-container div.content div.cheked-box-container div.submit-box b
 div.m-box {
   display: none;
   padding: 80px 20px;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
