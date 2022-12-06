@@ -223,7 +223,7 @@ main div.main-container div.emons-story-container h2 {
 }
 main div.main-container div.emons-story-container div.specevent_visual {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 main div.main-container div.emons-story-container div.specevent_visual div.specevent_icon {
   margin-right: 10px;

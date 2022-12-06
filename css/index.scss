@@ -260,7 +260,7 @@ main {
 
             div.specevent_visual {
                 display: flex;
-                overflow-x: scroll;
+                overflow-x: auto;
                 div.specevent_icon {
                     margin-right: 10px;
                     flex-shrink: 0;
