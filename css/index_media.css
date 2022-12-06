@@ -1,4 +1,10 @@
 @media (max-width: 760px) {
+  main div.main-container div.wrap-new-product div.product-img-container div.main-img-box-container {
+    width: 100%;
+  }
+  main div.main-container div.wrap-new-product div.product-img-container div.sub-img-container {
+    width: 100%;
+  }
   main div.main-container div.instar-container div.instar-content h2 {
     font-size: 1.6rem;
   }
