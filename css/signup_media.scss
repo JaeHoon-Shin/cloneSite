@@ -1,5 +1,6 @@
 @media (max-width : 768px) {
     form {
+        display: none;
         div.content-container {
             div.content {
                 div.member-info-box {
@@ -165,5 +166,11 @@
 
         }
 
+    }
+    div.m-box{
+        display: flex;
+    }
+    div.dark-box{
+        display: none;
     }
 }

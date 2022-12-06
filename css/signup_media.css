@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+  form {
+    display: none;
+  }
   form div.content-container div.content div.member-info-box ul.member-info li {
     display: block;
   }
@@ -108,5 +111,11 @@
     margin-top: 20px;
     padding: 10px 0px;
     font-size: 11px;
+  }
+  div.m-box {
+    display: flex;
+  }
+  div.dark-box {
+    display: none;
   }
 }/*# sourceMappingURL=signup_media.css.map */
