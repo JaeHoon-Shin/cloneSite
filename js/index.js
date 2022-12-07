@@ -12,10 +12,10 @@ function mainSlideFun(n) {
 let mainViewAll = document.querySelectorAll(`main>div.visual-box>div.img-box-list>div.img-box`);
 let mainViewAni = setInterval(function () {
     ++mainViewNum;
-    let numPx = (-1903) * Number(mainViewNum);
+    /* let numPx = (-1903) * Number(mainViewNum); */
     mainSlideFun(mainViewNum);
     if (mainViewNum > 9) {
-        clearInterval(mainViewAni);
+        mainViewAni=0;
     }
 }, 8000); 
 
