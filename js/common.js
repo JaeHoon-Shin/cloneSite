@@ -1,8 +1,8 @@
 $('body').prepend('<header>');
 $('body').append('<footer>');
-$('header').load('../inc.html header');
+$('header').load('../inc.html header',head);
 $('footer').load('../inc.html footer');
-
+function head(){
 function side (){
     let i = window.pageYOffset
     const nonSide = document.querySelector('.side-bar')
@@ -31,3 +31,4 @@ tabSubBtn.forEach(function(el,key){
     };
 
 });
+}
