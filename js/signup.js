@@ -7,11 +7,3 @@ popupExit.onclick = function () {
     popupBox.style.display = "none";
     darkBox.style.display = "none";
 }
-licenseBtn.onclick = function () {
-    licenseBox.style.display = 'block';
-    document.querySelector('html').style.overflow = 'hidden';
-};
-document.querySelector('.close').onclick = function () {
-    licenseBox.style.display = 'none';
-    document.querySelector('html').style.overflow = 'visible';
-};

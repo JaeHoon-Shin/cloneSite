@@ -63,7 +63,11 @@ header {
                             top: 17px;
                         }
                     }
-
+                    li.on{
+                        a{
+                            color: red;
+                        }
+                    }
                     li:nth-child(1) {
                         a::before {
                             content: "";

@@ -62,6 +62,9 @@ header div.header-container div.header-top div.header-top-menu ul li a::before {
   left: 0;
   top: 17px;
 }
+header div.header-container div.header-top div.header-top-menu ul li.on a {
+  color: red;
+}
 header div.header-container div.header-top div.header-top-menu ul li:nth-child(1) a::before {
   content: "";
   width: 0px;

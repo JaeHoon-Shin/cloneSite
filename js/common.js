@@ -8,8 +8,16 @@ function side (){
     const nonSide = document.querySelector('.side-bar')
     i>0 ? nonSide.style.opacity = "1" : nonSide.style.opacity = "0" ;
 }
-
 window.addEventListener('scroll',side);
+let hidx = localStorage.idx;
+
+$('.header-top-menu>ul>li').removeClass('on');
+$('.header-top-menu>ul>li').eq(hidx).addClass('on');
+$('.header-top-menu>ul>li').on('click', function(){
+    hidx = $(this).index();
+    localStorage.idx = hidx;   
+});
+localStorage.clear();
 
 const tabBtn = document.querySelector('.all-cate>a'),
       tabBox = document.querySelector('.tab-container'),
