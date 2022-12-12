@@ -1,7 +1,7 @@
 $('body').prepend('<header>');
 $('body').append('<footer>');
 $('header').load('../inc.html header',head);
-$('footer').load('../inc.html footer');
+$('footer').load('../inc.html footer',foot);
 function head(){
 function side (){
     let i = window.pageYOffset
@@ -31,4 +31,17 @@ tabSubBtn.forEach(function(el,key){
     };
 
 });
+}
+function foot(){
+    const licenseBtn = document.querySelector('.license-btn'),
+licenseBox = document.querySelector('.license-dark');
+
+licenseBtn.onclick = function () {
+licenseBox.style.display = 'block';
+document.querySelector('html').style.overflow = 'hidden';
+};
+document.querySelector('.close').onclick = function () {
+licenseBox.style.display = 'none';
+document.querySelector('html').style.overflow = 'visible';
+};
 }
