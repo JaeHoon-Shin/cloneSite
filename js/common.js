@@ -1,7 +1,7 @@
 $('body').prepend('<header>');
 $('body').append('<footer>');
-$('header').load('../inc.html header',head);
-$('footer').load('../inc.html footer',foot);
+$('header').load('./inc.html header',head);
+$('footer').load('./inc.html footer',foot);
 function head(){
 function side (){
     let i = window.pageYOffset
