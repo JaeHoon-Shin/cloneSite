@@ -9,13 +9,13 @@ function side (){
     i>0 ? nonSide.style.opacity = "1" : nonSide.style.opacity = "0" ;
 }
 window.addEventListener('scroll',side);
-let hidx = localStorage.idx;
 
+let hidx = localStorage.idx;
 $('.header-top-menu>ul>li').removeClass('on');
 $('.header-top-menu>ul>li').eq(hidx).addClass('on');
 $('.header-top-menu>ul>li').on('click', function(){
     hidx = $(this).index();
-    localStorage.idx = hidx;   
+    localStorage.hidx = hidx;   
 });
 localStorage.clear();
 
