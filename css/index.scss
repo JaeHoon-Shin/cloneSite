@@ -1,4 +1,3 @@
-
 body {
     div.popup-background {
         position: fixed;
@@ -8,6 +7,7 @@ body {
         background-color: rgba(0, 0, 0, 0.6);
         z-index: 999;
         display: none;
+
         div.popup-container {
             position: relative;
             top: 50%;
@@ -55,16 +55,19 @@ body {
                     }
                 }
 
-                div.popup-content {
-                    display: inline-block;
-                    width: 350px;
+                div.popup-slide {
+                    height: 500px;
+                    div.popup-content {
+                        display: inline-block;
+                        width: 350px;
 
-                    a {
-                        width: 100%;
+                        a {
+                            /* width: 100%; */
 
-                        img {
-                            width: 100%;
-                            display: block;
+                            img {
+                                width: 100%;
+                                display: block;
+                            }
                         }
                     }
                 }
@@ -102,6 +105,7 @@ body {
 
 /*------------------ main -----------------------*/
 main {
+
     /*------------------main visual -----------------------*/
     div.visual-box {
         position: relative;
@@ -124,6 +128,7 @@ main {
                 &:nth-child(1) {
                     opacity: 1;
                 }
+
                 /* animation: v-slied 20s infinite; 
                 @keyframes v-slied {
                     20%{
@@ -236,8 +241,9 @@ main {
                     div.title-box {
                         margin: 40px 0px 20px;
                         font-size: 18px;
-                        span{
-                            br{
+
+                        span {
+                            br {
                                 display: none;
                             }
                         }
@@ -261,10 +267,12 @@ main {
             div.specevent_visual {
                 display: flex;
                 overflow-x: auto;
+
                 div.specevent_icon {
                     margin-right: 10px;
                     flex-shrink: 0;
                     padding-bottom: 20px;
+
                     a {
                         img {
                             width: 100%;
@@ -300,11 +308,13 @@ main {
             max-width: 1400px;
             text-align: center;
             padding: 0px 20px;
+
             h2 {
                 font-size: 30px;
                 font-weight: bold;
                 margin-bottom: 40px;
             }
+
             div.new-product-list {
                 ul {
                     display: flex;
@@ -341,6 +351,7 @@ main {
                 div.main-img-box-container {
                     width: 50%;
                     margin-right: 10px;
+
                     div.main-img-box {
                         width: 100%;
                         height: 100%;
@@ -356,6 +367,7 @@ main {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+
                     div.sub-img-box {
                         display: flex;
                         margin-bottom: 20px;
@@ -403,7 +415,8 @@ main {
                         margin-top: 20px;
                         font-size: 36px;
                         font-weight: bold;
-                        br{
+
+                        br {
                             display: none;
                         }
                     }
@@ -453,6 +466,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 margin-left: 40px;
+
                 div.text-box {
                     display: flex;
                     flex-direction: column;
@@ -470,6 +484,7 @@ main {
                         }
                     }
                 }
+
                 div.slide-button {
                     display: flex;
                     justify-content: right;
@@ -498,6 +513,7 @@ main {
                         }
                     }
                 }
+
                 div.youtube-list-box {
                     ul {
                         display: flex;
@@ -632,12 +648,14 @@ main {
             background: #f3f4f6;
             margin-top: 150px;
             padding: 40px 40px;
+
             h2 {
                 padding: 0px 0px 30px;
                 text-align: center;
                 font-weight: bold;
                 font-size: 2rem;
             }
+
             div.visual-box {
                 button {
                     position: absolute;
@@ -829,13 +847,16 @@ main {
                         }
                     }
                 }
+
                 div.m-visual {
                     display: flex;
                     justify-content: center;
                     display: none;
+
                     a {
                         width: 40%;
                         margin: 5px;
+
                         img {
                             width: 100%;
                             border-radius: 5px;
@@ -914,8 +935,8 @@ main {
                         border-radius: 5px;
                     }
                 }
-s
-                &:nth-last-child(1) {
+
+                s &:nth-last-child(1) {
                     margin-right: 0px;
                 }
             }
@@ -933,7 +954,7 @@ s
                 div.notice-content {
                     display: flex;
                     align-items: center;
-                    
+
                     h2 {
                         width: 140px;
                         float: left;
@@ -946,9 +967,11 @@ s
                         height: 24px;
                         width: 100%;
                         overflow: hidden;
+
                         div.notice-list {
                             height: 24px;
                             animation: notice-ani 20s infinite;
+
                             @keyframes notice-ani {
                                 25% {
                                     transform: translateY(0px);
@@ -978,6 +1001,7 @@ s
                                             font-size: 16px;
                                             display: inline-block;
                                         }
+
                                         span {
                                             display: inline-block;
                                             margin-left: 40px;
@@ -985,7 +1009,7 @@ s
                                             font-weight: lighter;
                                             font-size: 16px;
                                         }
-                                        
+
                                     }
                                 }
                             }

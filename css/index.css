@@ -47,14 +47,17 @@ body div.popup-background div.popup-container div.popup-content-box div.btn-box 
   box-sizing: border-box;
   z-index: 999;
 }
-body div.popup-background div.popup-container div.popup-content-box div.popup-content {
+body div.popup-background div.popup-container div.popup-content-box div.popup-slide {
+  height: 500px;
+}
+body div.popup-background div.popup-container div.popup-content-box div.popup-slide div.popup-content {
   display: inline-block;
   width: 350px;
 }
-body div.popup-background div.popup-container div.popup-content-box div.popup-content a {
-  width: 100%;
+body div.popup-background div.popup-container div.popup-content-box div.popup-slide div.popup-content a {
+  /* width: 100%; */
 }
-body div.popup-background div.popup-container div.popup-content-box div.popup-content a img {
+body div.popup-background div.popup-container div.popup-content-box div.popup-slide div.popup-content a img {
   width: 100%;
   display: block;
 }

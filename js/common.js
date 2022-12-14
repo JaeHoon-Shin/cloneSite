@@ -52,4 +52,8 @@ document.querySelector('.close').onclick = function () {
 licenseBox.style.display = 'none';
 document.querySelector('html').style.overflow = 'visible';
 };
+$('.top-icon').on('click',function(e){
+    e.preventDefault(); /* e.preventDefault() */
+    window.scrollTo(0,0);
+})
 }
