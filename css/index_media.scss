@@ -50,7 +50,25 @@ $pc: 1400px;
 }
 
 @include deviceMax(1000px) {
+
     main {
+
+        //메인 뷰 슬릭 도트 반응형
+        div.visual-box {
+            div.img-box-list {
+                .view-slick-dots {
+                    >li {
+                        >button {
+                            width: 60px;
+                            height: 3px;
+                            background-color: #fff;
+                            text-indent: -9999px;
+                        }
+                    }
+                }
+            }
+        }
+
         div.main-container {
             div.notice-container {
                 padding-bottom: 30px;
@@ -234,6 +252,21 @@ $pc: 1400px;
 
 @include device($mobile, 700px) {
     main {
+        //메인 뷰 슬릭 도트 반응형
+        div.visual-box {
+            div.img-box-list {
+                .view-slick-dots {
+                    >li {
+                        >button {
+                            width: 12%;
+                            height: 3px;
+                            background-color: #fff;
+                            text-indent: -9999px;
+                        }
+                    }
+                }
+            }
+        }
         div.main-container {
             justify-content: center;
 

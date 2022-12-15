@@ -16,6 +16,12 @@
   }
 }
 @media (max-width: 1000px) {
+  main div.visual-box div.img-box-list .view-slick-dots > li > button {
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    text-indent: -9999px;
+  }
   main div.main-container div.notice-container {
     padding-bottom: 30px;
   }
@@ -119,6 +125,12 @@
   }
 }
 @media (min-width: 360px) and (max-width: 700px) {
+  main div.visual-box div.img-box-list .view-slick-dots > li > button {
+    width: 12%;
+    height: 3px;
+    background-color: #fff;
+    text-indent: -9999px;
+  }
   main div.main-container {
     justify-content: center;
   }

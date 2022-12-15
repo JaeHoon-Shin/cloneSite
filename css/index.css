@@ -23,43 +23,32 @@ body div.popup-background div.popup-container div.popup-content-box {
   width: 2450px;
   position: absolute;
 }
-body div.popup-background div.popup-container div.popup-content-box div.btn-box {
-  position: absolute;
-  left: 140px;
-  bottom: 10%;
-}
-body div.popup-background div.popup-container div.popup-content-box div.btn-box ul {
-  display: flex;
-}
-body div.popup-background div.popup-container div.popup-content-box div.btn-box ul li {
-  margin-left: 10px;
-}
-body div.popup-background div.popup-container div.popup-content-box div.btn-box ul li:nth-child(1) a {
-  background-color: red;
-}
-body div.popup-background div.popup-container div.popup-content-box div.btn-box ul li a {
-  display: block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  background-color: #fff;
-  box-sizing: border-box;
-  z-index: 999;
-}
 body div.popup-background div.popup-container div.popup-content-box div.popup-slide {
-  height: 500px;
-}
-body div.popup-background div.popup-container div.popup-content-box div.popup-slide div.popup-content {
-  display: inline-block;
   width: 350px;
-}
-body div.popup-background div.popup-container div.popup-content-box div.popup-slide div.popup-content a {
-  /* width: 100%; */
+  height: 500px;
 }
 body div.popup-background div.popup-container div.popup-content-box div.popup-slide div.popup-content a img {
   width: 100%;
-  display: block;
+}
+body div.popup-background div.popup-container div.popup-content-box div.popup-slide .slick-dots {
+  position: absolute;
+  bottom: 17px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+body div.popup-background div.popup-container div.popup-content-box div.popup-slide .slick-dots > li {
+  margin-right: 3px;
+  float: left;
+}
+body div.popup-background div.popup-container div.popup-content-box div.popup-slide .slick-dots > li > button {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #14008c;
+  border-radius: 50%;
+  text-indent: -10000px;
+}
+body div.popup-background div.popup-container div.popup-content-box div.popup-slide .slick-dots > li.slick-active > button {
+  background-color: #14008c;
 }
 body div.popup-background div.popup-container div.popup-content-box div.popup-text-container {
   width: 350px;
@@ -104,52 +93,26 @@ main div.visual-box div.img-box-list div.img-box {
   position: relative;
   top: 0;
   left: 0;
-  opacity: 0;
-  transition: opacity 4s;
-  /* animation: v-slied 20s infinite; 
-  @keyframes v-slied {
-      20%{
-         left:-1903px;
-      }
-      40%{
-          left:-3806px;
-      }
-      60%{
-          left:-5709px;
-      }
-      80%{
-          left:-7612px;
-      }
-      100%{
-          left:-9515px;
-      }
-  } */
-}
-main div.visual-box div.img-box-list div.img-box:nth-child(1) {
-  opacity: 1;
 }
 main div.visual-box div.img-box-list div.img-box a img {
   width: 100%;
 }
-main div.visual-box button {
-  border: 0;
-  outline: 0;
+main div.visual-box div.img-box-list > button {
   cursor: pointer;
-}
-main div.visual-box button.slide:nth-of-type(1) {
   position: absolute;
-  left: 10%;
   top: 50%;
+}
+main div.visual-box div.img-box-list > button:nth-of-type(1) {
+  left: 10%;
   background: url(../img/main_slide_arr.png) no-repeat;
   width: 50px;
   height: 50px;
   font-size: 0;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
-main div.visual-box button.slide:nth-of-type(2) {
-  position: absolute;
+main div.visual-box div.img-box-list > button:nth-of-type(2) {
   right: 10%;
-  top: 50%;
   background: url(../img/main_slide_arr.png) no-repeat;
   background-position: 100%;
   width: 50px;
@@ -157,23 +120,24 @@ main div.visual-box button.slide:nth-of-type(2) {
   font-size: 0;
   transform: translate(-50%, -50%);
 }
-main div.visual-box ul {
+main div.visual-box div.img-box-list .view-slick-dots {
   position: absolute;
-  bottom: 40px;
+  bottom: 5%;
   left: 50%;
-  display: flex;
   transform: translate(-50%, 0);
-  width: 50%;
 }
-main div.visual-box ul li {
-  width: 13%;
+main div.visual-box div.img-box-list .view-slick-dots > li {
+  float: left;
+  cursor: pointer;
 }
-main div.visual-box ul li button {
-  width: 100%;
+main div.visual-box div.img-box-list .view-slick-dots > li > button {
+  width: 100px;
   height: 3px;
+  background-color: #fff;
+  text-indent: -9999px;
 }
-main div.visual-box ul li:nth-child(1) button {
-  height: 5px;
+main div.visual-box div.img-box-list .view-slick-dots > li.slick-active > button {
+  background-color: red;
 }
 main div.main-container {
   padding: 0px 20px;
@@ -454,15 +418,37 @@ main div.main-container div.youtube-container div.youtube-list-container div.you
   color: #ffffff;
 }
 main div.main-container div.celeb-visual-container {
-  position: relative;
-  overflow: hidden;
-  padding: 0px 20px;
-}
-main div.main-container div.celeb-visual-container div.celeb-visual-list {
   max-width: 1400px;
   margin: 150px auto 150px;
   overflow: hidden;
   position: relative;
+}
+main div.main-container div.celeb-visual-container div.celeb-visual-list {
+  /* button {
+                     width: 50px;
+                     height: 50px;
+                     position: absolute;
+                     z-index: 1;
+                     top: 50%;
+                     color: #fff;
+                     transform: translate(0, -50%);
+                     border: none;
+                     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(172deg) brightness(103%) contrast(101%);
+                 }
+
+                 button.slide-left {
+                     background: url(../img/chevron-left.svg);
+                 }
+
+                 button.slide-right {
+                     background: url(../img/chevron-right.svg);
+                     right: 0%;
+                 }
+  */
+  /* div.celeb-view-box { */
+  /* display: flex; */
+  position: relative;
+  /* } */
 }
 main div.main-container div.celeb-visual-container div.celeb-visual-list button {
   width: 50px;
@@ -473,42 +459,41 @@ main div.main-container div.celeb-visual-container div.celeb-visual-list button 
   color: #fff;
   transform: translate(0, -50%);
   border: none;
+  text-indent: -9999px;
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(172deg) brightness(103%) contrast(101%);
+  cursor: pointer;
 }
-main div.main-container div.celeb-visual-container div.celeb-visual-list button.slide-left {
+main div.main-container div.celeb-visual-container div.celeb-visual-list button:nth-of-type(1) {
   background: url(../img/chevron-left.svg);
 }
-main div.main-container div.celeb-visual-container div.celeb-visual-list button.slide-right {
+main div.main-container div.celeb-visual-container div.celeb-visual-list button:nth-of-type(2) {
   background: url(../img/chevron-right.svg);
   right: 0%;
 }
-main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box {
-  display: flex;
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view {
   position: relative;
 }
-main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box div {
-  width: 467px;
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view a div.img-box {
+  width: 100%;
 }
-main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box div a {
-  position: relative;
-}
-main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box div a img {
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view a div.img-box img {
   width: 100%;
   height: 700px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box div a div.celeb-text-box {
-  position: relative;
-  top: -15%;
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view a div.celeb-text-box {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
   margin-left: 15px;
 }
-main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box div a div.celeb-text-box p {
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view a div.celeb-text-box p {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
 }
-main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box div a div.celeb-text-box div {
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view a div.celeb-text-box div {
   border: 1px solid #fff;
   color: #fff;
   text-align: center;
@@ -519,7 +504,7 @@ main div.main-container div.celeb-visual-container div.celeb-visual-list div.cel
   font-weight: normal;
   margin-top: 10px;
 }
-main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view-box div:hover div.celeb-text-box div {
+main div.main-container div.celeb-visual-container div.celeb-visual-list div.celeb-view:hover div.celeb-text-box div {
   color: #000000;
   background-color: #fff;
 }
@@ -542,15 +527,16 @@ main div.main-container div.review-container div.visual-box button {
   transform: translateY(-100%);
   z-index: 1;
   background: url(../img/newmain_slide_arr.png) no-repeat;
+  cursor: pointer;
 }
 main div.main-container div.review-container div.visual-box button.right {
   right: 10%;
-  transform: translateX(100%);
+  transform: translate(100%, -50%);
   background-position-x: -30px;
 }
 main div.main-container div.review-container div.visual-box button.left {
   left: 10%;
-  transform: translateX(-100%);
+  transform: translate(-100%, -50%);
 }
 main div.main-container div.review-container div.visual-box div.review-list-box {
   max-width: 1400px;
@@ -767,6 +753,34 @@ main div.main-container div.notice-container {
 main div.main-container div.notice-container div.notice-content-box {
   position: relative;
   padding: 40px 0px;
+  /*                 div.button-box {
+      float: right;
+      position: relative;
+      top: -15px;
+
+      button {
+          width: 40px;
+          height: 40px;
+          border: 1px solid #e0e0e0;
+          border-radius: 50%;
+          background: url(../img/newmain_icons.png) no-repeat;
+          transform: translate(0, -50%);
+          cursor: pointer;
+      }
+
+      button.button-left {
+          background-position: -76px;
+          position: absolute;
+          left: -100px;
+      }
+
+      button.button-rigth {
+          background-position: -109px;
+
+          position: absolute;
+          left: -50px;
+      }
+  } */
 }
 main div.main-container div.notice-container div.notice-content-box div.notice-content {
   display: flex;
@@ -782,46 +796,30 @@ main div.main-container div.notice-container div.notice-content-box div.notice-c
   float: left;
   height: 24px;
   width: 100%;
-  overflow: hidden;
+}
+main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box button {
+  position: absolute;
+  top: 0;
+  text-indent: -9999px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  background: url(../img/newmain_icons.png) no-repeat;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box button:nth-of-type(1) {
+  right: 100px;
+  z-index: 10;
+  background-position: -76px;
+}
+main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box button:nth-of-type(2) {
+  background-position: -109px;
+  right: 50px;
 }
 main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box div.notice-list {
   height: 24px;
-  -webkit-animation: notice-ani 20s infinite;
-          animation: notice-ani 20s infinite;
-}
-@-webkit-keyframes notice-ani {
-  25% {
-    transform: translateY(0px);
-  }
-  25% {
-    transform: translateY(-24px);
-  }
-  50% {
-    transform: translateY(-48px);
-  }
-  75% {
-    transform: translateY(-72px);
-  }
-  100% {
-    transform: translateY(-96px);
-  }
-}
-@keyframes notice-ani {
-  25% {
-    transform: translateY(0px);
-  }
-  25% {
-    transform: translateY(-24px);
-  }
-  50% {
-    transform: translateY(-48px);
-  }
-  75% {
-    transform: translateY(-72px);
-  }
-  100% {
-    transform: translateY(-96px);
-  }
 }
 main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box div.notice-list ul li a p {
   font-size: 16px;
@@ -833,30 +831,6 @@ main div.main-container div.notice-container div.notice-content-box div.notice-c
   color: #cecece;
   font-weight: lighter;
   font-size: 16px;
-}
-main div.main-container div.notice-container div.notice-content-box div.button-box {
-  float: right;
-  position: relative;
-  top: -15px;
-}
-main div.main-container div.notice-container div.notice-content-box div.button-box button {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #e0e0e0;
-  border-radius: 50%;
-  background: url(../img/newmain_icons.png) no-repeat;
-  transform: translate(0, -50%);
-  cursor: pointer;
-}
-main div.main-container div.notice-container div.notice-content-box div.button-box button.button-left {
-  background-position: -76px;
-  position: absolute;
-  left: -100px;
-}
-main div.main-container div.notice-container div.notice-content-box div.button-box button.button-rigth {
-  background-position: -109px;
-  position: absolute;
-  left: -50px;
 }
 
 @media (max-width: 760px) {
@@ -877,6 +851,12 @@ main div.main-container div.notice-container div.notice-content-box div.button-b
   }
 }
 @media (max-width: 1000px) {
+  main div.visual-box div.img-box-list .view-slick-dots > li > button {
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    text-indent: -9999px;
+  }
   main div.main-container div.notice-container {
     padding-bottom: 30px;
   }
@@ -980,6 +960,12 @@ main div.main-container div.notice-container div.notice-content-box div.button-b
   }
 }
 @media (min-width: 360px) and (max-width: 700px) {
+  main div.visual-box div.img-box-list .view-slick-dots > li > button {
+    width: 12%;
+    height: 3px;
+    background-color: #fff;
+    text-indent: -9999px;
+  }
   main div.main-container {
     justify-content: center;
   }
