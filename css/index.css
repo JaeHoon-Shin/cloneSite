@@ -349,6 +349,7 @@ main div.main-container div.youtube-container div.youtube-list-container {
   display: flex;
   flex-direction: column;
   margin-left: 40px;
+  justify-content: space-between;
 }
 main div.main-container div.youtube-container div.youtube-list-container div.text-box {
   display: flex;
@@ -386,11 +387,16 @@ main div.main-container div.youtube-container div.youtube-list-container div.sli
 main div.main-container div.youtube-container div.youtube-list-container div.slide-button span b {
   font-weight: bold;
 }
+main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box {
+  /* overflow: hidden; */
+  /* max-width: 500px; */
+}
 main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul {
   display: flex;
 }
 main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul li {
   width: 147px;
+  /* flex-shrink: 0; */
   overflow: hidden;
   cursor: pointer;
 }
@@ -424,29 +430,6 @@ main div.main-container div.celeb-visual-container {
   position: relative;
 }
 main div.main-container div.celeb-visual-container div.celeb-visual-list {
-  /* button {
-                     width: 50px;
-                     height: 50px;
-                     position: absolute;
-                     z-index: 1;
-                     top: 50%;
-                     color: #fff;
-                     transform: translate(0, -50%);
-                     border: none;
-                     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(172deg) brightness(103%) contrast(101%);
-                 }
-
-                 button.slide-left {
-                     background: url(../img/chevron-left.svg);
-                 }
-
-                 button.slide-right {
-                     background: url(../img/chevron-right.svg);
-                     right: 0%;
-                 }
-  */
-  /* div.celeb-view-box { */
-  /* display: flex; */
   position: relative;
   /* } */
 }
