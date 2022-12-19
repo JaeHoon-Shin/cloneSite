@@ -142,7 +142,7 @@ main div.visual-box div.img-box-list .view-slick-dots > li.slick-active > button
 main div.main-container {
   padding: 0px 20px;
   /*------------------ stroy -----------------------*/
-  /*------------------ new porduct -----------------------*/
+  /*------------------ new product -----------------------*/
   /*------------------ youtube -----------------------*/
   /*------------------ celeb -----------------------*/
   /* reivew */
@@ -159,7 +159,7 @@ main div.main-container div.cate-visual {
 }
 main div.main-container div.cate-visual div.cate-icon {
   text-align: center;
-  margin-right: 45px;
+  margin-right: 35px;
 }
 main div.main-container div.cate-visual div.cate-icon a div.icon-box {
   width: 135px;
@@ -244,11 +244,11 @@ main div.main-container div.wrap-new-product div.new-product-list ul li {
   margin: 0 7px;
   cursor: pointer;
 }
-main div.main-container div.wrap-new-product div.new-product-list ul li:nth-child(1) {
+main div.main-container div.wrap-new-product div.new-product-list ul li.active {
   background-color: #ffffff;
   border: 1px solid #17008f;
 }
-main div.main-container div.wrap-new-product div.new-product-list ul li:nth-child(1) a {
+main div.main-container div.wrap-new-product div.new-product-list ul li.active a {
   color: #17008f;
 }
 main div.main-container div.wrap-new-product div.product-img-container {
@@ -364,48 +364,55 @@ main div.main-container div.youtube-container div.youtube-list-container div.tex
   font-size: 36px;
   font-weight: bold;
 }
-main div.main-container div.youtube-container div.youtube-list-container div.slide-button {
-  display: flex;
-  justify-content: right;
+main div.main-container div.youtube-container div.youtube-list-container div.swiper {
+  width: 500px;
 }
-main div.main-container div.youtube-container div.youtube-list-container div.slide-button button {
+main div.main-container div.youtube-container div.youtube-list-container div.swiper div.btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.swiper div.btn > div {
+  position: relative;
+  height: 27px;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.swiper div.btn .swiper-pagination {
+  width: 10%;
+  bottom: -5px;
+}
+main div.main-container div.youtube-container div.youtube-list-container div.swiper div.btn .swiper-button-prev {
   border-style: none;
   background: url(../img/select.jpg) no-repeat center center;
   width: 27px;
   height: 27px;
+  transform: rotate(90deg);
   cursor: pointer;
 }
-main div.main-container div.youtube-container div.youtube-list-container div.slide-button button:nth-child(1) {
-  transform: rotate(90deg);
+main div.main-container div.youtube-container div.youtube-list-container div.swiper div.btn .swiper-button-prev::after {
+  content: "";
 }
-main div.main-container div.youtube-container div.youtube-list-container div.slide-button button:nth-of-type(2) {
+main div.main-container div.youtube-container div.youtube-list-container div.swiper div.btn .swiper-button-next {
+  border-style: none;
+  background: url(../img/select.jpg) no-repeat center center;
+  width: 27px;
+  height: 27px;
   transform: rotate(-90deg);
+  cursor: pointer;
 }
-main div.main-container div.youtube-container div.youtube-list-container div.slide-button span {
-  padding-top: 3px;
+main div.main-container div.youtube-container div.youtube-list-container div.swiper div.btn .swiper-button-next::after {
+  content: "";
 }
-main div.main-container div.youtube-container div.youtube-list-container div.slide-button span b {
-  font-weight: bold;
-}
-main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box {
-  /* overflow: hidden; */
-  /* max-width: 500px; */
-}
-main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul {
-  display: flex;
-}
-main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul li {
+main div.main-container div.youtube-container div.youtube-list-container div.swiper div.swiper-wrapper div.swiper-slide {
   width: 147px;
-  /* flex-shrink: 0; */
   overflow: hidden;
   cursor: pointer;
 }
-main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul li img {
+main div.main-container div.youtube-container div.youtube-list-container div.swiper div.swiper-wrapper div.swiper-slide img {
   border-radius: 5px;
   margin: 5%;
   width: 90% !important;
 }
-main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul li div {
+main div.main-container div.youtube-container div.youtube-list-container div.swiper div.swiper-wrapper div.swiper-slide div {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -413,14 +420,14 @@ main div.main-container div.youtube-container div.youtube-list-container div.you
   margin-top: 5px;
   padding: 0 8px !important;
 }
-main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul li:nth-child(1) {
+main div.main-container div.youtube-container div.youtube-list-container div.swiper div.swiper-wrapper div.swiper-slide.active {
   background: #282828;
   border-radius: 5px;
   max-width: 100%;
   overflow: hidden;
   padding-bottom: 5px;
 }
-main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul li:nth-child(1) div {
+main div.main-container div.youtube-container div.youtube-list-container div.swiper div.swiper-wrapper div.swiper-slide.active div {
   color: #ffffff;
 }
 main div.main-container div.celeb-visual-container {
@@ -768,6 +775,7 @@ main div.main-container div.notice-container div.notice-content-box {
 main div.main-container div.notice-container div.notice-content-box div.notice-content {
   display: flex;
   align-items: center;
+  margin: 0 30px;
 }
 main div.main-container div.notice-container div.notice-content-box div.notice-content h2 {
   width: 140px;
@@ -847,6 +855,9 @@ main div.main-container div.notice-container div.notice-content-box div.notice-c
     position: absolute;
     bottom: 0;
   }
+  main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box button {
+    top: -40px;
+  }
   main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box div.notice-list ul li a {
     width: 100%;
   }
@@ -912,11 +923,11 @@ main div.main-container div.notice-container div.notice-content-box div.notice-c
     width: 100%;
     margin-left: 0px;
   }
+  main div.main-container div.youtube-container div.youtube-list-container div.swiper {
+    width: 100%;
+  }
   main div.main-container div.youtube-container div.youtube-list-container div.text-box {
     display: none;
-  }
-  main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul li {
-    width: 32%;
   }
   main div.main-container div.celeb-visual-container div.celeb-visual-list {
     overflow-x: scroll;

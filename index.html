@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet">
     <script defer src="./js/common.js"></script>
@@ -245,8 +246,9 @@
                             <img src="./img/youtube_cover_1.jpg">
                             <span></span>
                         </a>
-                        <div id="player">
-                        </div>
+                        <div id="playerBox">
+                        <iframe id="player" src="https://www.youtube.com/embed/q7CKE1WsO74?rel=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
+                    </div>
                     </div>
                 </div>
                 <div class="youtube-list-container">
@@ -254,7 +256,60 @@
                         <span>에몬스의 이야기를 들어보세요</span>
                         <span>요즘감성 요즘공간 에몬스</span>
                     </div>
-                    <div class="slide-button">
+                    <div class="swiper mySwiper">
+                        <div class="btn">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide active">
+                                <img src="./img/youtube_cover_1.jpg">
+                                <div>
+                                    요즘의 나 ㅣ Ep.2 \'요즘의나, 신혼부부편\'(ft.커스텀옷장, 뉴코지 침대)
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/youtube_cover_2.jpg">
+                                <div>
+                                    요즘의 나 ㅣ Ep.1 \'요즘의 나, 에몬스에 살아\'! (ft. 위브릭블랑 소파)
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/youtube_cover_3.jpg">
+                                <div>
+                                    Ep.01 요즘 퇴근 후가 즐거운 N가지 이유
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/youtube_cover_4.jpg">
+                                <div>
+                                    Ep.02 흔한 직장인의 요즘 재택근무!
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/youtube_cover_5.jpg">
+                                <div>
+                                    유튜버 어느덧오늘님의 48평 코지무드 모듈소파 인테리어
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/youtube_cover_6.jpg">
+                                <div>
+                                    요즘의 나 ㅣ Ep.1 \'요즘의 나, 에몬스에 살아\'! (ft. 위브릭블랑 소파)
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/youtube_cover_7.jpg">
+                                <div>
+                                    요즘의 나 ㅣ Ep.2 \'요즘의나, 신혼부부편\'(ft.커스텀옷장, 뉴코지 침대)
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- <div class="slide-button">
                         <button class="left"></button>
                         <span>
                             <b>1</b>
@@ -283,7 +338,7 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>

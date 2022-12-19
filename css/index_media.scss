@@ -78,7 +78,9 @@ $pc: 1400px;
                         div.notice-list-box {
                             position: absolute;
                             bottom: 0;
-
+                            button {
+                                top:-40px
+                            }
                             div.notice-list {
                                 ul {
                                     li {
@@ -115,12 +117,10 @@ $pc: 1400px;
 }
 
 @include device($tablet, $pc) {
-    main {
-        div.main-container {}
-    }
 }
 
 @include device($mobile, $pc) {
+    
     main {
         div.main-container {
             div.cate-visual {
@@ -192,18 +192,11 @@ $pc: 1400px;
                 div.youtube-list-container {
                     width: 100%;
                     margin-left: 0px;
-
+                    div.swiper{
+                        width: 100%;
+                    }
                     div.text-box {
                         display: none;
-                    }
-
-                    div.youtube-list-box {
-
-                        ul {
-                            li {
-                                width: 32%;
-                            }
-                        }
                     }
                 }
             }

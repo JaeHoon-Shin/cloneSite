@@ -29,6 +29,9 @@
     position: absolute;
     bottom: 0;
   }
+  main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box button {
+    top: -40px;
+  }
   main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box div.notice-list ul li a {
     width: 100%;
   }
@@ -94,11 +97,11 @@
     width: 100%;
     margin-left: 0px;
   }
+  main div.main-container div.youtube-container div.youtube-list-container div.swiper {
+    width: 100%;
+  }
   main div.main-container div.youtube-container div.youtube-list-container div.text-box {
     display: none;
-  }
-  main div.main-container div.youtube-container div.youtube-list-container div.youtube-list-box ul li {
-    width: 32%;
   }
   main div.main-container div.celeb-visual-container div.celeb-visual-list {
     overflow-x: scroll;
