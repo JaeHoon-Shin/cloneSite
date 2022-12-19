@@ -13,7 +13,6 @@ const elPopUpClose = document.querySelectorAll('div.popup-text-container > div >
 elPopUpClose.forEach(function (a, key) {
     a.onclick = function () {
         if (key == 0) {
-            console.log(key)
             let toDay = new Date();
             toDay.setMinutes(toDay.getMinutes() + 10);
             document.cookie = `popup=팝업;expires=${toDay.toUTCString()}`
@@ -72,7 +71,7 @@ function slickSlide() {
         responsive:  // 반응형 작업
             [
                 {
-                    breakpoint: 760,   //width 1024 이상부터
+                    breakpoint: 760,   //width 760px 이상부터
                     settings:
                     {
                         slidesToShow: 2
@@ -87,7 +86,7 @@ function slickSlide() {
         autoplaySpeed: 3000,
         arrows: true,           // true 이전 다음 버튼 생성 false 생성 X
         infinite: true,
-        vertical: true,
+        vertical: true,         // 세로 슬라이드 
         verticalSwiping: true
     })
 }
