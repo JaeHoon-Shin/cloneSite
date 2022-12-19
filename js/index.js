@@ -28,12 +28,12 @@ reviewBtn.forEach(function (btn, key) {
     btn.addEventListener('click', function () {
         if (start < 3) {
             if (key == 0) {
-                start++
+                start--
             }
         }
         if (start > 0) {
             if (key == 1) {
-                start--
+                start++
             }
         }
         reviewBox.style = `transform : translateX(-${350 * start}px);`
