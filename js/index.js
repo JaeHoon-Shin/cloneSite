@@ -27,15 +27,16 @@ const reviewBtn = document.querySelectorAll('.review-container > .visual-box > b
     reviewBox = document.querySelector('.review-list');
 let start = 0;
 reviewBtn.forEach(function (btn, key) {
+    
     btn.addEventListener('click', function () {
-        if (start < 3) {
+        if(start > 0) {
             if (key == 0) {
-                start--
+                start--; 
             }
         }
-        if (start > 0) {
+        if(start < 3) {
             if (key == 1) {
-                start++
+                start++;
             }
         }
         reviewBox.style = `transform : translateX(-${350 * start}px);`
@@ -229,14 +230,38 @@ function aj() {
         });
     })
 }
-const elProduct = document.querySelectorAll('.new-product-list>ul>li');
+// product 비동기 처리
+const elProduct = document.querySelectorAll('.new-product-list>ul>li'),
+      elCon = document.querySelector(".product-img-container");
 let pIdx = 0;
 elProduct.forEach(function(el,key){
     el.addEventListener('click',function(e){
-        console.log(key)
         e.preventDefault();
         elProduct[pIdx].classList.remove('active');
         elProduct[key].classList.add('active');
         pIdx = key;
+        $.ajax({
+            url: "./json/product.json",
+            dataType : "json",
+            success : function(proJson){
+                elCon.innerHTML = `<div class="main-img-box-container">
+                <div class="main-img-box">
+                    <a href="#">
+                    <img src=${proJson.product[key].main}>
+                    </a>
+                </div>
+            </div>
+            <div class="sub-img-container">
+                <div class="sub-img-box">
+                    <a href="#"><img src="${proJson.product[key].sub[0]}"></a>
+                    <a href="#"><img src="${proJson.product[key].sub[1]}"></a>
+                </div>
+                <div class="sub-img-box">
+                    <a href="#"><img src="${proJson.product[key].sub[2]}"></a>
+                    <a href="#"><img src="${proJson.product[key].sub[3]}"></a>
+                </div>
+            </div>`
+            }
+        })
     })
 })

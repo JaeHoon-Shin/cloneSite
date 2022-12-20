@@ -3,13 +3,8 @@ $('body').append('<footer>');
 $('header').load('./inc.html header', head);
 $('footer').load('./inc.html footer', foot);
 function head() {
-    window.addEventListener('scroll', side);
-    //사이드바
-    function side() {
-        let i = window.pageYOffset
-        const nonSide = document.querySelector('.side-bar')
-        i > 0 ? nonSide.style.opacity = "1" : nonSide.style.opacity = "0";
-    }
+    
+    
 
     //헤더 메뉴 클릭시 위치 확인
     let hidx = localStorage.idx;
@@ -55,6 +50,13 @@ function foot() {
     };
     $('.top-icon').on('click', function (e) {
         e.preventDefault(); /* e.preventDefault() */
-        window.scrollTo(0, 0);
+        window.scrollTo({top:0, left:0,behavior:'smooth'});
     })
+    //사이드바
+    window.addEventListener('scroll', side);
+    function side() {
+        let i = window.pageYOffset
+        const nonSide = document.querySelector('.side-bar')
+        i > 0 ? nonSide.style.opacity = "1" : nonSide.style.opacity = "0";
+    }
 }
