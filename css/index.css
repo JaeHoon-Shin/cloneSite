@@ -787,6 +787,7 @@ main div.main-container div.notice-container div.notice-content-box div.notice-c
   float: left;
   height: 24px;
   width: 100%;
+  margin-left: 30px;
 }
 main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box button {
   position: absolute;
