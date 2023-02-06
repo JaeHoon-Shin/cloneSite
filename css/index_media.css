@@ -128,6 +128,11 @@
   }
 }
 @media (min-width: 360px) and (max-width: 700px) {
+  main div.visual-box div.img-box-list {
+    /* >.slick-arrow{
+        display: none;
+    } */
+  }
   main div.visual-box div.img-box-list .view-slick-dots > li > button {
     width: 12%;
     height: 3px;
@@ -136,6 +141,9 @@
   }
   main div.main-container {
     justify-content: center;
+  }
+  main div.main-container div.emons-story-container div.specevent_visual div.specevent_icon {
+    width: 100%;
   }
   main div.main-container div.cate-visual {
     width: 360px;
@@ -151,5 +159,11 @@
   }
   main div.main-container div.cate-visual div.cate-icon a div.title-box {
     font-size: 12px;
+  }
+  main div.main-container div.wrap-new-product div.new-product-list > ul {
+    flex-wrap: wrap;
+  }
+  main div.main-container div.wrap-new-product div.new-product-list > ul > li {
+    margin-bottom: 5px;
   }
 }/*# sourceMappingURL=index_media.css.map */

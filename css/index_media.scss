@@ -78,9 +78,11 @@ $pc: 1400px;
                         div.notice-list-box {
                             position: absolute;
                             bottom: 0;
+
                             button {
-                                top:-40px
+                                top: -40px
                             }
+
                             div.notice-list {
                                 ul {
                                     li {
@@ -116,11 +118,10 @@ $pc: 1400px;
     }
 }
 
-@include device($tablet, $pc) {
-}
+@include device($tablet, $pc) {}
 
 @include device($mobile, $pc) {
-    
+
     main {
         div.main-container {
             div.cate-visual {
@@ -192,9 +193,11 @@ $pc: 1400px;
                 div.youtube-list-container {
                     width: 100%;
                     margin-left: 0px;
-                    div.swiper{
+
+                    div.swiper {
                         width: 100%;
                     }
+
                     div.text-box {
                         display: none;
                     }
@@ -245,10 +248,16 @@ $pc: 1400px;
 
 @include device($mobile, 700px) {
     main {
+
         //메인 뷰 슬릭 도트 반응형
         div.visual-box {
             div.img-box-list {
+
+                /* >.slick-arrow{
+                    display: none;
+                } */
                 .view-slick-dots {
+
                     >li {
                         >button {
                             width: 12%;
@@ -260,8 +269,17 @@ $pc: 1400px;
                 }
             }
         }
+
         div.main-container {
             justify-content: center;
+
+            div.emons-story-container {
+                div.specevent_visual {
+                    div.specevent_icon {
+                        width: 100%;
+                    }
+                }
+            }
 
             div.cate-visual {
                 width: 360px;
@@ -279,6 +297,18 @@ $pc: 1400px;
 
                         div.title-box {
                             font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            div.wrap-new-product {
+                div.new-product-list {
+                    >ul {
+                        flex-wrap: wrap;
+
+                        >li {
+                            margin-bottom: 5px;
                         }
                     }
                 }

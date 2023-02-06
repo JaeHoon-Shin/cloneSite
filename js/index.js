@@ -63,7 +63,15 @@ function slickSlide() {
         setPosition: 0,
         dots: true,
         fade: true,
-        dotsClass: "view-slick-dots"
+        dotsClass: "view-slick-dots",
+        responsive:[
+            {
+                breakpoint: 760,
+                settings:{
+                    arrows: false
+                }
+            }
+        ]
     });
     $('.celeb-visual-list').slick({
         slide: 'div',
@@ -74,10 +82,10 @@ function slickSlide() {
         responsive:  // 반응형 작업
             [
                 {
-                    breakpoint: 760,   //width 760px 이상부터
+                    breakpoint: 760,   //width 760px 이하
                     settings:
                     {
-                        slidesToShow: 2
+                        slidesToShow: 1
                     }
                 }
             ]
