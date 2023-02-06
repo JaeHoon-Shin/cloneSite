@@ -25,6 +25,9 @@
   main div.main-container div.notice-container {
     padding-bottom: 30px;
   }
+  main div.main-container div.notice-container div.notice-content-box div.notice-content {
+    margin: 0;
+  }
   main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box {
     position: absolute;
     bottom: 0;
