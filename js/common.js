@@ -3,9 +3,6 @@ $('body').append('<footer>');
 $('header').load('./inc.html header', head);
 $('footer').load('./inc.html footer', foot);
 function head() {
-    
-    
-
     //헤더 메뉴 클릭시 위치 확인
     let hidx = localStorage.idx;
     $('.header-top-menu>ul>li').removeClass('on');

@@ -43,7 +43,6 @@ body div.popup-background div.popup-container div.popup-content-box div.popup-sl
 body div.popup-background div.popup-container div.popup-content-box div.popup-slide .slick-dots > li > button {
   width: 12px;
   height: 12px;
-  border: 2px solid #14008c;
   border-radius: 50%;
   text-indent: -10000px;
 }
