@@ -797,7 +797,7 @@ main div.main-container div.notice-container div.notice-content-box div.notice-c
   border: 1px solid #e0e0e0;
   border-radius: 50%;
   background: url(../img/newmain_icons.png) no-repeat;
-  transform: translate(0, -50%);
+  transform: translate(0, -25%);
   cursor: pointer;
 }
 main div.main-container div.notice-container div.notice-content-box div.notice-content div.notice-list-box button:nth-of-type(1) {
