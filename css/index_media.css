@@ -160,6 +160,9 @@
   main div.main-container div.cate-visual div.cate-icon a div.title-box {
     font-size: 12px;
   }
+  main div.main-container div.wrap-new-product {
+    margin: 100px auto;
+  }
   main div.main-container div.wrap-new-product div.new-product-list > ul {
     flex-wrap: wrap;
   }
